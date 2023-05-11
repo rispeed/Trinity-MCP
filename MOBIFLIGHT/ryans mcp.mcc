@@ -99,7 +99,7 @@
     </config>
     <config guid="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12">
       <active>true</active>
-      <description>IAS / MACH</description>
+      <description>IAS -knots</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/airspeed_dial_kts_mach" />
         <modifiers>
@@ -110,6 +110,25 @@
         <preconditions>
           <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7104ecf-f9bd-48fd-8929-ce599ef319c4">
+      <active>true</active>
+      <description>IAS -mach</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/airspeed_dial_kts_mach" />
+        <modifiers>
+          <transformation active="False" expression="Round($,0)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-8ce-348" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&lt;" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -584,6 +603,20 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="a2d0f90e-20f5-4dc9-a523-4350c0365987">
+      <active>true</active>
+      <description>IAS_VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-8ce-348" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="8e65b83a-5dbc-4c8e-b51f-6651e35c644d">
@@ -638,9 +671,29 @@
           <onRight type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+1" />
           <onRightFast />
         </encoder>
-        <preconditions />
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
         <configrefs>
           <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ff578234-a49f-4ea9-a53a-75e90fba92e0">
+      <active>true</active>
+      <description>ENCODER MACH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-8ce-348" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-0.01" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+0.01" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&lt;" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" placeholder="#" />
         </configrefs>
       </settings>
     </config>
@@ -655,9 +708,7 @@
           <onRightFast />
         </encoder>
         <preconditions />
-        <configrefs>
-          <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="379e4667-3988-4ac3-a9ee-79cba188e031">
@@ -671,9 +722,7 @@
           <onRightFast />
         </encoder>
         <preconditions />
-        <configrefs>
-          <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="01355cde-4b53-45f2-8165-558deb801872">
