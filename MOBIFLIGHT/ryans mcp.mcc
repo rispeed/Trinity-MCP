@@ -121,7 +121,7 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/airspeed_dial_kts_mach" />
         <modifiers>
-          <transformation active="False" expression="Round($,0)" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="Round($/1,2)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Display Module" serial="MobiFlight Mega/ SN-8ce-348" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
