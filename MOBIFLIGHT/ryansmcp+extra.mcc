@@ -3,8 +3,24 @@
   <outputs>
     <config guid="ca9aabe8-54da-46c2-bf55-0d7c765a1369">
       <active>true</active>
+      <description>CAPTAIN COURSE TEST</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ANGLE_SIM_POS" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-4c5-b44" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8ffafcc5-0185-43d1-967c-6c30deb0e328">
+      <active>false</active>
       <description>CAPTAIN COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/course_pilot" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -20,7 +36,7 @@
     <config guid="1d1f4f6c-991d-4bf0-aa48-eaa98611ce7d">
       <active>true</active>
       <description>CAPTAIN COURSE OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -36,7 +52,7 @@
     <config guid="e77fe9cc-714c-46dc-92c4-0b3c6c6844cd">
       <active>true</active>
       <description>HEADING OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -52,7 +68,7 @@
     <config guid="499d567f-bc3c-4d0c-9f06-1f562e65574a">
       <active>true</active>
       <description>ALTITUDE OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -68,7 +84,7 @@
     <config guid="932117bd-4ec2-473f-af77-385d1ee5d285">
       <active>true</active>
       <description>FO COURSE OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -84,7 +100,7 @@
     <config guid="7f16c3c7-2e7f-4d98-98fc-78ff1175819f">
       <active>true</active>
       <description>HEADING</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_hdg_dial" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -100,7 +116,7 @@
     <config guid="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12">
       <active>true</active>
       <description>IAS -knots</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
         <modifiers>
           <transformation active="True" expression="Round($,0)" substrStart="0" substrEnd="7" />
@@ -118,7 +134,7 @@
     <config guid="d7104ecf-f9bd-48fd-8929-ce599ef319c4">
       <active>true</active>
       <description>IAS -mach</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
         <modifiers>
           <transformation active="True" expression="Round($/1,2)" substrStart="0" substrEnd="7" />
@@ -136,7 +152,7 @@
     <config guid="3f44ad83-1177-406d-9f82-2fafc88c293f">
       <active>true</active>
       <description>IAS / MACH OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/show_ias" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -153,7 +169,7 @@
     <config guid="cd8fb1f8-c7dd-4995-bbc1-d1af0d634e3e">
       <active>true</active>
       <description>ALTITUDE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_alt_dial" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -169,7 +185,7 @@
     <config guid="98c757ae-eb76-4fbf-a426-33fc33cbf063">
       <active>true</active>
       <description>VERTICAL SPEED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit/autopilot/vertical_velocity" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -185,7 +201,7 @@
     <config guid="7142876f-4a94-446a-9a3d-57ab32494e30">
       <active>true</active>
       <description>VERTICAL SPEED OFF</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -201,7 +217,7 @@
     <config guid="ee359f45-0a7f-4707-b44b-169fc8c80d44">
       <active>true</active>
       <description>FO COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/course_copilot" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -217,7 +233,7 @@
     <config guid="a268338f-5068-4812-9c1f-b0efd41e05d3">
       <active>true</active>
       <description>LED_CAPTFD</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/switches/autopilot/fd_ca" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -234,7 +250,7 @@
     <config guid="174dc98d-f3cb-48b0-9e74-44e615401234">
       <active>true</active>
       <description>LED_FOFD</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/switches/autopilot/fd_fo" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -251,7 +267,7 @@
     <config guid="74e18048-fa3d-47c1-b29c-a882da751edb">
       <active>true</active>
       <description>LED_ATARM</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/autothrottle_status1" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -265,7 +281,7 @@
     <config guid="a8a73951-4e99-48e0-8d12-cbb3fb2c551e">
       <active>true</active>
       <description>LED_BUTTON_CMDA</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/cmd_a_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -279,7 +295,7 @@
     <config guid="2c7ed0cd-cebe-4826-901f-6457195b6bb2">
       <active>true</active>
       <description>LED_BUTTON_CMDB</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/cmd_b_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -293,7 +309,7 @@
     <config guid="ddfc7952-5553-4403-bad5-35a4d42d12ef">
       <active>true</active>
       <description>LED_BUTTON_CWSA</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/cws_a_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -307,7 +323,7 @@
     <config guid="562f6762-8217-46ac-bc94-a3a4acd36279">
       <active>true</active>
       <description>LED_BUTTON_CWSB</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/cws_b_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -321,7 +337,7 @@
     <config guid="d1f256a2-1f1e-4a87-a098-1ef008aa45ef">
       <active>true</active>
       <description>LED_BUTTON_N1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/n1_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -335,7 +351,7 @@
     <config guid="ff3565f3-7a03-4e86-8ec2-f760d60ad63a">
       <active>true</active>
       <description>LED_BUTTON_SPEED</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/speed_status1" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -349,7 +365,7 @@
     <config guid="f95630ff-803f-45cc-adb5-5471876e0b78">
       <active>true</active>
       <description>LED_BUTTON_LVLCHANGE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/lvl_chg_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -363,7 +379,7 @@
     <config guid="d211af20-05fd-4c94-8708-31066de270e3">
       <active>true</active>
       <description>LED_BUTTON_HDGSEL</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/hdg_sel_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -377,7 +393,7 @@
     <config guid="fcc3750b-31ff-44b9-86b0-e99a0c816895">
       <active>true</active>
       <description>LED_BUTTON_LNAV</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/lnav_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -391,7 +407,7 @@
     <config guid="feaea447-f1d6-430a-aad2-a1302bc766ee">
       <active>true</active>
       <description>LED_BUTTON_VNAV</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/vnav_status1" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -405,7 +421,7 @@
     <config guid="6117ac38-b753-491f-8387-1d0fe6594891">
       <active>true</active>
       <description>LED_BUTTON_VORLOC</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/vorloc_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -419,7 +435,7 @@
     <config guid="290edf84-93c5-49fb-970e-cbfd58f2cbd7">
       <active>true</active>
       <description>LED_BUTTON_APP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/app_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -433,7 +449,7 @@
     <config guid="09723a3b-a02f-4707-8618-41cb4ae838ee">
       <active>true</active>
       <description>LED_BUTTON_ALTHOLD</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/alt_hld_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -447,7 +463,7 @@
     <config guid="743b35f8-5785-4c0c-9adf-469705b70959">
       <active>true</active>
       <description>LED_BUTTON_VS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -461,7 +477,7 @@
     <config guid="b853d5bd-6916-4787-a7f1-c6718a4588ea">
       <active>true</active>
       <description>ATPOS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/autothrottle_arm_pos" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -475,7 +491,7 @@
     <config guid="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff">
       <active>true</active>
       <description>FDSIDE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/autopilot/fd_side" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -489,7 +505,7 @@
     <config guid="0a8ba92f-c399-440b-8019-da08f61b2d0f">
       <active>true</active>
       <description>FLIGHT_DIRECTOR_POS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/flight_director_pos" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -503,7 +519,7 @@
     <config guid="663ae265-cf86-49b8-a983-39f2ecb84008">
       <active>true</active>
       <description>FLIGHT_DIRECTOR_FO_POS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/flight_director_fo_pos" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -517,7 +533,7 @@
     <config guid="0e42a158-2675-4ae4-b8dd-4e0d33b65c27">
       <active>true</active>
       <description>VS_STATUS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -531,7 +547,7 @@
     <config guid="5a1f9961-8886-4910-9f6c-948270251c73">
       <active>true</active>
       <description>SHOW_IAS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/show_ias" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -545,7 +561,7 @@
     <config guid="90508a3d-f2e3-4e35-98b5-e1e376cee21c">
       <active>true</active>
       <description>POWER_STATUS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -559,7 +575,7 @@
     <config guid="bdcf1087-c7aa-49e0-8b73-70434ec6dc7b">
       <active>true</active>
       <description>AFDS_PROTECT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/afds_protect" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -573,7 +589,7 @@
     <config guid="646c992d-d091-46bb-b1e2-8cb5a49d1473">
       <active>true</active>
       <description>DIGIT 8</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/mcp/digit_8" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -587,7 +603,7 @@
     <config guid="55f91623-0d6f-4c68-9f5c-0caaee876919">
       <active>false</active>
       <description>AFDS_SHOW</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/afds_protect" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -606,8 +622,54 @@
     <config guid="a2d0f90e-20f5-4dc9-a523-4350c0365987">
       <active>true</active>
       <description>IAS_VAL</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-4c5-b44" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b994d3e3-42fe-4f04-8780-7643b16a85ff">
+      <active>true</active>
+      <description>BANK_ANGLE_SIM_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/bank_angle_pos" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="MobiFlight Mega/ SN-4c5-b44" trigger="normal">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="BANK_ANGLE_PREV_POS" varExpression="@" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ab148ab-424e-4671-bbd0-c8141cc93e75">
+      <active>true</active>
+      <description>BANK_ANGLE_PREV_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ANGLE_PREV_POS" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-4c5-b44" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a28c7f2-100c-424b-a0bb-c766eff0b881">
+      <active>true</active>
+      <description>BANK_ACTUAL_SWITCH_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ACTUAL_SWITCH_POS" varExpression="$" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -622,7 +684,7 @@
     <config guid="8e65b83a-5dbc-4c8e-b51f-6651e35c644d">
       <active>true</active>
       <description>ENCODER CAPT_COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_pilot_dn" expression="" />
           <onLeftFast />
@@ -636,7 +698,7 @@
     <config guid="1723ef36-396e-4a55-bfa5-2e1f1124b56f">
       <active>true</active>
       <description>ENCODER FO_COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_copilot_dn" expression="" />
           <onLeftFast />
@@ -650,7 +712,7 @@
     <config guid="f6395901-3905-4c93-9c99-ecedc29c70a0">
       <active>true</active>
       <description>ENCODER HEADING</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/heading_dn" expression="" />
           <onLeftFast />
@@ -664,12 +726,12 @@
     <config guid="e7aa3cc8-2264-452e-8d25-4a2279032537">
       <active>true</active>
       <description>ENCODER IAS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-1" />
-          <onLeftFast />
+          <onLeftFast type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-5" />
           <onRight type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+1" />
-          <onRightFast />
+          <onRightFast type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+5" />
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;=" value="1" logic="and" />
@@ -682,7 +744,7 @@
     <config guid="ff578234-a49f-4ea9-a53a-75e90fba92e0">
       <active>true</active>
       <description>ENCODER MACH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-0.01" />
           <onLeftFast />
@@ -700,7 +762,7 @@
     <config guid="f4e538f8-4988-4288-a120-3ab095246f0b">
       <active>true</active>
       <description>ENCODER ALTITUDE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/altitude_dn" expression="#-1" />
           <onLeftFast />
@@ -714,7 +776,7 @@
     <config guid="379e4667-3988-4ac3-a9ee-79cba188e031">
       <active>true</active>
       <description>ENCODER VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="#-1" />
           <onLeftFast />
@@ -728,7 +790,7 @@
     <config guid="01355cde-4b53-45f2-8165-558deb801872">
       <active>true</active>
       <description>TOGGLE_CAPTFD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="1" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="0" />
@@ -740,7 +802,7 @@
     <config guid="58728eae-fa90-41bc-9ed9-88183086413e">
       <active>true</active>
       <description>TOGGLE_FOFD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="1" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="0" />
@@ -752,7 +814,7 @@
     <config guid="bfbbe729-4693-49b5-851d-bde8c55ebeec">
       <active>true</active>
       <description>TOGGLE_ATARM</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="0" />
           <onRelease />
@@ -766,7 +828,7 @@
     <config guid="5f8afd21-0315-4891-83a0-851da31ecb0f">
       <active>true</active>
       <description>TOGGLE_ATDISARM</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="" />
@@ -780,7 +842,7 @@
     <config guid="4a0a668e-445e-4c0c-b4f7-7e4ee91d12fc">
       <active>true</active>
       <description>AP DISCONNECT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/disconnect_toggle" expression="" />
           <onRelease />
@@ -792,7 +854,7 @@
     <config guid="f83ab816-fb69-465f-ab84-96ba23a4f3f1">
       <active>true</active>
       <description>COBUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/change_over_press" expression="" />
           <onRelease />
@@ -804,7 +866,7 @@
     <config guid="a9c46121-13c0-49ee-8579-eab3205f4bee">
       <active>true</active>
       <description>SPEED INT BUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/spd_interv" expression="" />
           <onRelease />
@@ -816,7 +878,7 @@
     <config guid="96eeab41-62d8-4ac4-8146-a5258a0a226a">
       <active>true</active>
       <description>ALT INT BUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_interv" expression="" />
           <onRelease />
@@ -828,7 +890,7 @@
     <config guid="81b15486-c7ae-436c-812a-19b971c6d41a">
       <active>true</active>
       <description>BUTTON_CWSA</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_a_press" expression="" />
           <onRelease />
@@ -840,7 +902,7 @@
     <config guid="cf942701-dec3-45f7-987a-b98328bcddfa">
       <active>true</active>
       <description>BUTTON_CWSB</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_b_press" expression="" />
           <onRelease />
@@ -852,7 +914,7 @@
     <config guid="2bce9420-9969-45ed-87ce-967fb4b36e1b">
       <active>true</active>
       <description>BUTTON_CMDA</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_a_press" expression="" />
           <onRelease />
@@ -864,7 +926,7 @@
     <config guid="d7ab5e52-8d1f-42c2-bb58-59a08ada1a3d">
       <active>true</active>
       <description>BUTTON_CMDB</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_b_press" expression="" />
           <onRelease />
@@ -876,7 +938,7 @@
     <config guid="a4322e57-a165-4085-b5e2-68685ff912cb">
       <active>true</active>
       <description>BUTTON_n1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/n1_press" expression="" />
           <onRelease />
@@ -888,7 +950,7 @@
     <config guid="a0341405-d9e9-4cec-8a05-3e684a1d488a">
       <active>true</active>
       <description>BUTTON_SPEED</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/speed_press" expression="" />
           <onRelease />
@@ -900,7 +962,7 @@
     <config guid="cc2f46e7-0db0-4357-805e-b5a4124e40c9">
       <active>true</active>
       <description>BUTTON_VNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vnav_press" expression="" />
           <onRelease />
@@ -912,7 +974,7 @@
     <config guid="1c29b4e3-4496-4d8d-ad2a-11d0a763e574">
       <active>true</active>
       <description>BUTTON_LVLCHANGE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lvl_chg_press" expression="" />
           <onRelease />
@@ -924,7 +986,7 @@
     <config guid="3db2dbef-9a9c-4c0b-939b-49d8552795eb">
       <active>true</active>
       <description>BUTTON_HDGSEL</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/hdg_sel_press" expression="" />
           <onRelease />
@@ -936,7 +998,7 @@
     <config guid="83b6639c-fe7a-45c0-8be6-4b86c0d4955b">
       <active>true</active>
       <description>BUTTON_LNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lnav_press" expression="" />
           <onRelease />
@@ -948,7 +1010,7 @@
     <config guid="5861bf8f-dbe9-4958-87e6-efce8eb0bf28">
       <active>true</active>
       <description>BUTTON_VORLOC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vorloc_press" expression="" />
           <onRelease />
@@ -960,7 +1022,7 @@
     <config guid="287eacee-38a0-4c8e-a7e5-6300f6ec5d95">
       <active>true</active>
       <description>BUTTON_APP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/app_press" expression="" />
           <onRelease />
@@ -972,7 +1034,7 @@
     <config guid="ada6e467-7951-4604-84bc-63d63cba7df0">
       <active>true</active>
       <description>BUTTON_ALTHLD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_hld_press" expression="" />
           <onRelease />
@@ -984,7 +1046,7 @@
     <config guid="176651a0-48a7-4732-9644-07dbc0910602">
       <active>true</active>
       <description>BUTTON_VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vs_press" expression="" />
           <onRelease />
@@ -993,63 +1055,115 @@
         <configrefs />
       </settings>
     </config>
-    <config guid="44366d65-a270-44a4-a789-4da79631a143">
-      <active>true</active>
-      <description>BANK ANGLE 10</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/rotary/autopilot/bank_angle" expression="0" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
     <config guid="ebe021dd-7304-45f5-8613-1277ffd595e2">
       <active>true</active>
-      <description>BANK ANGLE 15</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>BANK ANGLE 15 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/rotary/autopilot/bank_angle" expression="1" />
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
           <onRelease />
         </button>
-        <preconditions />
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="0" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
-    <config guid="6d50d414-d6a9-407d-8ada-10c993798fca">
+    <config guid="d7025e59-90a2-4075-8daf-af2fe816c155">
       <active>true</active>
-      <description>BANK ANGLE 20</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>BANK ANGLE 20 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/rotary/autopilot/bank_angle" expression="2" />
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
           <onRelease />
         </button>
-        <preconditions />
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="1" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
-    <config guid="f122d70b-9559-4e85-8852-ac4a2f03c9fe">
+    <config guid="59d108e6-e136-4d3d-ba2a-3e825111ff5b">
       <active>true</active>
-      <description>BANK ANGLE 25</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>BANK ANGLE 25 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/rotary/autopilot/bank_angle" expression="3" />
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
           <onRelease />
         </button>
-        <preconditions />
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="2" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
-    <config guid="725b81a9-7686-4746-9a0d-1195dca29a72">
+    <config guid="fcbf0dfc-88b4-4569-8c5a-bd50cf8b20db">
       <active>true</active>
-      <description>BANK ANGLE 30</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>BANK ANGLE 30 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/rotary/autopilot/bank_angle" expression="4" />
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
           <onRelease />
         </button>
-        <preconditions />
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6365d19d-0b9d-46bc-a240-0066cbf3a60c">
+      <active>true</active>
+      <description>BANK ANGLE 25 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f61c38c5-71de-4781-a5ea-deb601d072f2">
+      <active>true</active>
+      <description>BANK ANGLE 20 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="faa3f110-a622-474f-8548-cd5828d25bea">
+      <active>true</active>
+      <description>BANK ANGLE 15 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d8f02b1b-1de6-46ee-9ba2-a5a9f4bb127b">
+      <active>true</active>
+      <description>BANK ANGLE 10 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-4c5-b44" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="1" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>

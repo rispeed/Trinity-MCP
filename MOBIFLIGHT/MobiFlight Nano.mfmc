@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Nano</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Encoder Name="ENC_1" PinLeft="12" PinRight="11" EncoderType="0" />
+  <Encoder Name="ENC_2" PinLeft="10" PinRight="9" EncoderType="0" />
+  <AnalogInput Name="RightPedal" Pin="14" Sensitivity="1" />
+  <AnalogInput Name="LeftPedal" Pin="15" Sensitivity="1" />
+</Config>

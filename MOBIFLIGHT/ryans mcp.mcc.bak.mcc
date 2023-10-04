@@ -101,7 +101,7 @@
       <active>true</active>
       <description>IAS -knots</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/airspeed_dial_kts_mach" />
         <modifiers>
           <transformation active="True" expression="Round($,0)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -119,7 +119,7 @@
       <active>true</active>
       <description>IAS -mach</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/airspeed_dial_kts_mach" />
         <modifiers>
           <transformation active="True" expression="Round($/1,2)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -585,7 +585,7 @@
       </settings>
     </config>
     <config guid="55f91623-0d6f-4c68-9f5c-0caaee876919">
-      <active>false</active>
+      <active>true</active>
       <description>AFDS_SHOW</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="laminar/B738/autopilot/afds_protect" />
