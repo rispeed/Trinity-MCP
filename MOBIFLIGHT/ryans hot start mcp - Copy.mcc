@@ -232,7 +232,7 @@
         <source type="XplaneDataRef" path="abus/CL650/ARINC429/RA-FCC-1/words/FCC/2/VERT_MODE_ACT" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <comparison active="True" value="5" operand="=" ifValue="1" elseValue="0" />
         </modifiers>
         <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VS" pinBrightness="255" />
         <preconditions />
