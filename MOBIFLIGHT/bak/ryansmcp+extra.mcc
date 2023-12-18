@@ -1,0 +1,1651 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="ca9aabe8-54da-46c2-bf55-0d7c765a1369">
+      <active>false</active>
+      <description>CAPTAIN COURSE TEST</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ANGLE_SIM_POS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8ffafcc5-0185-43d1-967c-6c30deb0e328">
+      <active>true</active>
+      <description>CAPTAIN COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/course_pilot" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1d1f4f6c-991d-4bf0-aa48-eaa98611ce7d">
+      <active>true</active>
+      <description>CAPTAIN COURSE OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="   " elseValue="  " />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e77fe9cc-714c-46dc-92c4-0b3c6c6844cd">
+      <active>true</active>
+      <description>HEADING OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="499d567f-bc3c-4d0c-9f06-1f562e65574a">
+      <active>true</active>
+      <description>ALTITUDE OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="932117bd-4ec2-473f-af77-385d1ee5d285">
+      <active>true</active>
+      <description>FO COURSE OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7f16c3c7-2e7f-4d98-98fc-78ff1175819f">
+      <active>true</active>
+      <description>HEADING</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_hdg_dial" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12">
+      <active>true</active>
+      <description>IAS -knots</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7104ecf-f9bd-48fd-8929-ce599ef319c4">
+      <active>true</active>
+      <description>IAS -mach</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($/1,2)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&lt;" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f44ad83-1177-406d-9f82-2fafc88c293f">
+      <active>true</active>
+      <description>IAS / MACH OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/show_ias" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="    " elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cd8fb1f8-c7dd-4995-bbc1-d1af0d634e3e">
+      <active>true</active>
+      <description>ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_alt_dial" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="98c757ae-eb76-4fbf-a426-33fc33cbf063">
+      <active>true</active>
+      <description>VERTICAL SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/vertical_velocity" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7142876f-4a94-446a-9a3d-57ab32494e30">
+      <active>true</active>
+      <description>VERTICAL SPEED OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="5" elseValue="1" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" ledDecimalPoints="1" />
+        <preconditions>
+          <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ee359f45-0a7f-4707-b44b-169fc8c80d44">
+      <active>true</active>
+      <description>FO COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/course_copilot" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a268338f-5068-4812-9c1f-b0efd41e05d3">
+      <active>true</active>
+      <description>LED_CAPTFD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/switches/autopilot/fd_ca" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="0a8ba92f-c399-440b-8019-da08f61b2d0f" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="174dc98d-f3cb-48b0-9e74-44e615401234">
+      <active>true</active>
+      <description>LED_FOFD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/switches/autopilot/fd_fo" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_FOFD" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="663ae265-cf86-49b8-a983-39f2ecb84008" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="74e18048-fa3d-47c1-b29c-a882da751edb">
+      <active>true</active>
+      <description>LED_ATARM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/autothrottle_status1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_ATARM" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8a73951-4e99-48e0-8d12-cbb3fb2c551e">
+      <active>true</active>
+      <description>LED_BUTTON_CMDA</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/cmd_a_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CMDA" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c7ed0cd-cebe-4826-901f-6457195b6bb2">
+      <active>true</active>
+      <description>LED_BUTTON_CMDB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/cmd_b_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CMDB" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ddfc7952-5553-4403-bad5-35a4d42d12ef">
+      <active>true</active>
+      <description>LED_BUTTON_CWSA</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/cws_a_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CWSA" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="562f6762-8217-46ac-bc94-a3a4acd36279">
+      <active>true</active>
+      <description>LED_BUTTON_CWSB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/cws_b_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CWSB" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d1f256a2-1f1e-4a87-a098-1ef008aa45ef">
+      <active>true</active>
+      <description>LED_BUTTON_N1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/n1_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_N1" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ff3565f3-7a03-4e86-8ec2-f760d60ad63a">
+      <active>true</active>
+      <description>LED_BUTTON_SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/speed_status1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_SPEED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f95630ff-803f-45cc-adb5-5471876e0b78">
+      <active>true</active>
+      <description>LED_BUTTON_LVLCHANGE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/lvl_chg_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_LVLC" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d211af20-05fd-4c94-8708-31066de270e3">
+      <active>true</active>
+      <description>LED_BUTTON_HDGSEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/hdg_sel_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_HDGSE" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fcc3750b-31ff-44b9-86b0-e99a0c816895">
+      <active>true</active>
+      <description>LED_BUTTON_LNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/lnav_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_LNAV" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="feaea447-f1d6-430a-aad2-a1302bc766ee">
+      <active>true</active>
+      <description>LED_BUTTON_VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/vnav_status1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VNAV" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6117ac38-b753-491f-8387-1d0fe6594891">
+      <active>true</active>
+      <description>LED_BUTTON_VORLOC</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/vorloc_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VORLO" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="290edf84-93c5-49fb-970e-cbfd58f2cbd7">
+      <active>true</active>
+      <description>LED_BUTTON_APP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/app_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_APP" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09723a3b-a02f-4707-8618-41cb4ae838ee">
+      <active>true</active>
+      <description>LED_BUTTON_ALTHOLD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/alt_hld_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_ALTHL" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="743b35f8-5785-4c0c-9adf-469705b70959">
+      <active>true</active>
+      <description>LED_BUTTON_VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VS" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b853d5bd-6916-4787-a7f1-c6718a4588ea">
+      <active>true</active>
+      <description>ATPOS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/autothrottle_arm_pos" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff">
+      <active>true</active>
+      <description>FDSIDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/autopilot/fd_side" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="0" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a8ba92f-c399-440b-8019-da08f61b2d0f">
+      <active>true</active>
+      <description>FLIGHT_DIRECTOR_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/flight_director_pos" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="663ae265-cf86-49b8-a983-39f2ecb84008">
+      <active>true</active>
+      <description>FLIGHT_DIRECTOR_FO_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/flight_director_fo_pos" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0e42a158-2675-4ae4-b8dd-4e0d33b65c27">
+      <active>true</active>
+      <description>VS_STATUS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/vs_status" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5a1f9961-8886-4910-9f6c-948270251c73">
+      <active>true</active>
+      <description>SHOW_IAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/show_ias" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="90508a3d-f2e3-4e35-98b5-e1e376cee21c">
+      <active>true</active>
+      <description>POWER_STATUS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/autopilot/autopilot_has_power" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bdcf1087-c7aa-49e0-8b73-70434ec6dc7b">
+      <active>true</active>
+      <description>AFDS_PROTECT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/afds_protect" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="646c992d-d091-46bb-b1e2-8cb5a49d1473">
+      <active>true</active>
+      <description>DIGIT 8</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/mcp/digit_8" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55f91623-0d6f-4c68-9f5c-0caaee876919">
+      <active>false</active>
+      <description>AFDS_SHOW</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/afds_protect" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="0" operand="&gt;" ifValue=" #" elseValue="0" />
+        </modifiers>
+        <display type="Display Module" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" ledDecimalPoints="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="bdcf1087-c7aa-49e0-8b73-70434ec6dc7b" operand="&gt;" value="0" logic="and" />
+          <precondition type="config" active="true" ref="646c992d-d091-46bb-b1e2-8cb5a49d1473" operand="&gt;" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a2d0f90e-20f5-4dc9-a523-4350c0365987">
+      <active>true</active>
+      <description>IAS_VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b994d3e3-42fe-4f04-8780-7643b16a85ff">
+      <active>true</active>
+      <description>BANK_ANGLE_SIM_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/autopilot/bank_angle_pos" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="BANK_ANGLE_PREV_POS" varExpression="@" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ab148ab-424e-4671-bbd0-c8141cc93e75">
+      <active>true</active>
+      <description>BANK_ANGLE_PREV_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ANGLE_PREV_POS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a28c7f2-100c-424b-a0bb-c766eff0b881">
+      <active>true</active>
+      <description>BANK_ACTUAL_SWITCH_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANK_ACTUAL_SWITCH_POS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MobiFlight Mega/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc5d3f70-50a8-4d38-a5c9-66df401e2436">
+      <active>true</active>
+      <description>LED OUTPUT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/electric/panel_brightness[0]" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="$*255" />
+        </modifiers>
+        <display type="Output" serial="EFIS1/ SN-F1B-30A" trigger="normal" pin="LED OUTPUT2 12" pinBrightness="255" pinPwm="True" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67b53c57-4f6c-4dfb-9815-033cf3c33108">
+      <active>true</active>
+      <description>LED OUTPUT (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/electric/panel_brightness[0]" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="$*255" />
+        </modifiers>
+        <display type="Output" serial="EFIS1/ SN-F1B-30A" trigger="normal" pin="LED OUTPUT 13" pinBrightness="255" pinPwm="True" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a3ae9a5-160d-48ab-8569-34865ae83d1b">
+      <active>true</active>
+      <description>VOR1 SWITCH STATE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/EFIS_control/capt/vor1_off_pos" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="54cd39ad-7c3c-4a6b-9166-cecf1e5afa8e">
+      <active>true</active>
+      <description>VOR2 SWITCH STATE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/EFIS_control/capt/vor2_off_pos" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8e65b83a-5dbc-4c8e-b51f-6651e35c644d">
+      <active>true</active>
+      <description>ENCODER CAPT_COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_pilot_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_pilot_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1723ef36-396e-4a55-bfa5-2e1f1124b56f">
+      <active>true</active>
+      <description>ENCODER FO_COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_copilot_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_copilot_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6395901-3905-4c93-9c99-ecedc29c70a0">
+      <active>true</active>
+      <description>ENCODER HEADING</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/heading_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/heading_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7aa3cc8-2264-452e-8d25-4a2279032537">
+      <active>true</active>
+      <description>ENCODER IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-1" />
+          <onLeftFast type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-5" />
+          <onRight type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+1" />
+          <onRightFast type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+5" />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ff578234-a49f-4ea9-a53a-75e90fba92e0">
+      <active>true</active>
+      <description>ENCODER MACH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-0.01" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#+0.01" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&lt;" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f4e538f8-4988-4288-a120-3ab095246f0b">
+      <active>true</active>
+      <description>ENCODER ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/altitude_dn" expression="#-1" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/altitude_up" expression="#+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="379e4667-3988-4ac3-a9ee-79cba188e031">
+      <active>true</active>
+      <description>ENCODER VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="#-1" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_down" expression="#+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="01355cde-4b53-45f2-8165-558deb801872">
+      <active>true</active>
+      <description>TOGGLE_CAPTFD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58728eae-fa90-41bc-9ed9-88183086413e">
+      <active>true</active>
+      <description>TOGGLE_FOFD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bfbbe729-4693-49b5-851d-bde8c55ebeec">
+      <active>true</active>
+      <description>TOGGLE_ATARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b853d5bd-6916-4787-a7f1-c6718a4588ea" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f8afd21-0315-4891-83a0-851da31ecb0f">
+      <active>true</active>
+      <description>TOGGLE_ATDISARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b853d5bd-6916-4787-a7f1-c6718a4588ea" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a0a668e-445e-4c0c-b4f7-7e4ee91d12fc">
+      <active>true</active>
+      <description>AP DISCONNECT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/disconnect_toggle" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f83ab816-fb69-465f-ab84-96ba23a4f3f1">
+      <active>true</active>
+      <description>COBUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/change_over_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9c46121-13c0-49ee-8579-eab3205f4bee">
+      <active>true</active>
+      <description>SPEED INT BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/spd_interv" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="96eeab41-62d8-4ac4-8146-a5258a0a226a">
+      <active>true</active>
+      <description>ALT INT BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_interv" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81b15486-c7ae-436c-812a-19b971c6d41a">
+      <active>true</active>
+      <description>BUTTON_CWSA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_a_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cf942701-dec3-45f7-987a-b98328bcddfa">
+      <active>true</active>
+      <description>BUTTON_CWSB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_b_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2bce9420-9969-45ed-87ce-967fb4b36e1b">
+      <active>true</active>
+      <description>BUTTON_CMDA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_a_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7ab5e52-8d1f-42c2-bb58-59a08ada1a3d">
+      <active>true</active>
+      <description>BUTTON_CMDB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_b_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a4322e57-a165-4085-b5e2-68685ff912cb">
+      <active>true</active>
+      <description>BUTTON_n1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/n1_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a0341405-d9e9-4cec-8a05-3e684a1d488a">
+      <active>true</active>
+      <description>BUTTON_SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/speed_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc2f46e7-0db0-4357-805e-b5a4124e40c9">
+      <active>true</active>
+      <description>BUTTON_VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vnav_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1c29b4e3-4496-4d8d-ad2a-11d0a763e574">
+      <active>true</active>
+      <description>BUTTON_LVLCHANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lvl_chg_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3db2dbef-9a9c-4c0b-939b-49d8552795eb">
+      <active>true</active>
+      <description>BUTTON_HDGSEL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/hdg_sel_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="83b6639c-fe7a-45c0-8be6-4b86c0d4955b">
+      <active>true</active>
+      <description>BUTTON_LNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lnav_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5861bf8f-dbe9-4958-87e6-efce8eb0bf28">
+      <active>true</active>
+      <description>BUTTON_VORLOC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vorloc_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="287eacee-38a0-4c8e-a7e5-6300f6ec5d95">
+      <active>true</active>
+      <description>BUTTON_APP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/app_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ada6e467-7951-4604-84bc-63d63cba7df0">
+      <active>true</active>
+      <description>BUTTON_ALTHLD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_hld_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="176651a0-48a7-4732-9644-07dbc0910602">
+      <active>true</active>
+      <description>BUTTON_VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vs_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ebe021dd-7304-45f5-8613-1277ffd595e2">
+      <active>true</active>
+      <description>BANK ANGLE 15 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7025e59-90a2-4075-8daf-af2fe816c155">
+      <active>true</active>
+      <description>BANK ANGLE 20 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59d108e6-e136-4d3d-ba2a-3e825111ff5b">
+      <active>true</active>
+      <description>BANK ANGLE 25 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fcbf0dfc-88b4-4569-8c5a-bd50cf8b20db">
+      <active>true</active>
+      <description>BANK ANGLE 30 UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6365d19d-0b9d-46bc-a240-0066cbf3a60c">
+      <active>true</active>
+      <description>BANK ANGLE 25 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f61c38c5-71de-4781-a5ea-deb601d072f2">
+      <active>true</active>
+      <description>BANK ANGLE 20 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="faa3f110-a622-474f-8548-cd5828d25bea">
+      <active>true</active>
+      <description>BANK ANGLE 15 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d8f02b1b-1de6-46ee-9ba2-a5a9f4bb127b">
+      <active>true</active>
+      <description>BANK ANGLE 10 DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-b6c-08c" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="BANK_ANGLE_PREV_POS" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ecce1f6d-1188-413c-945d-4b11511170ed">
+      <active>true</active>
+      <description>EFIS1 MINS KNOB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/pfd/dh_pilot_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/pfd/dh_pilot_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="895f53a5-fda0-435d-9fe4-beb8a04e773b">
+      <active>true</active>
+      <description>EFIS1 MINS-RADIO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-RADIO - 46" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/cpt/minimums_up" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b816c38-72e4-432c-a59a-57c85282b66a">
+      <active>true</active>
+      <description>EFIS1 MINS-BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-BARO - 47" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/cpt/minimums_dn" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6337d8ca-610a-4189-9a90-a94cbb513de2">
+      <active>true</active>
+      <description>EFIS1 BARO KNOB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/pilot/barometer_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="laminar/B738/pilot/barometer_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8d6cad3e-22ca-4046-a717-aba1319d79b5">
+      <active>true</active>
+      <description>EFIS1 BARO HPA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - HPA A3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/baro_in_hpa_up" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8c796c3f-4b8a-4de6-8202-e72e2d0d4cec">
+      <active>true</active>
+      <description>EFIS1 BARO IN.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - IN A2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/baro_in_hpa_dn" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ddf51607-ffe5-4384-b32f-8077382817a5">
+      <active>true</active>
+      <description>EFIS1 RST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RST - 48" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/rst_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="902c4945-deb7-402f-a348-0ceea35fffc3">
+      <active>true</active>
+      <description>EFIS1 STD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="STD - A13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/std_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d690ad6-a5ca-4264-b51c-88e27c1c8c70">
+      <active>true</active>
+      <description>EFIS1 CTR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="CTR - 49" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/ctr_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a372b42-a3b4-4675-a7a4-33a409f06e52">
+      <active>true</active>
+      <description>EFIS1 TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="TFC - A12" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/tfc_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="50e12987-ce84-4f75-99d6-8ad5453123c0">
+      <active>true</active>
+      <description>EFIS1 FPV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="FPV 28" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/fpv_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec3d0ddc-fa53-4dce-adf7-51cfff8304de">
+      <active>true</active>
+      <description>EFIS1 MTRS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MTRS 29" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/mtrs_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="218bca63-ca7d-44bb-a50c-1b589180964a">
+      <active>true</active>
+      <description>EFIS1 VOR1-OFF-VOR1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR1 - 23" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor1_off_up" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor1_off_dn" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a3ae9a5-160d-48ab-8569-34865ae83d1b" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="8a3ae9a5-160d-48ab-8569-34865ae83d1b" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb017922-541b-411d-acac-3353e7e41146">
+      <active>true</active>
+      <description>EFIS1 VOR1-OFF-ADF1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF1 - 22" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor1_off_dn" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor1_off_up" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8a3ae9a5-160d-48ab-8569-34865ae83d1b" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="8a3ae9a5-160d-48ab-8569-34865ae83d1b" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d189bbf9-77d9-4797-8320-7a6ff6302d5d">
+      <active>true</active>
+      <description>EFIS1 VOR2-OFF-VOR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR2 -24" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor2_off_up" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor2_off_dn" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="54cd39ad-7c3c-4a6b-9166-cecf1e5afa8e" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="54cd39ad-7c3c-4a6b-9166-cecf1e5afa8e" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ae0b5d7d-b08e-4293-82af-65ac3246fc2f">
+      <active>true</active>
+      <description>EFIS1 VOR2-OFF-ADF2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF2 -25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor2_off_dn" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/vor2_off_up" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="54cd39ad-7c3c-4a6b-9166-cecf1e5afa8e" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="54cd39ad-7c3c-4a6b-9166-cecf1e5afa8e" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8eaba88-9212-4dc4-87d0-168e37954839">
+      <active>true</active>
+      <description>EFIS1 MAP MODE APP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="APP -50" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS_control/capt/map_mode_pos" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="181c0f36-3956-443d-9b9a-9a74ac865120">
+      <active>true</active>
+      <description>EFIS1 MAP MODE VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR - 51" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS_control/capt/map_mode_pos" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="423c3859-8d86-48ff-93be-3330e3af922e">
+      <active>true</active>
+      <description>EFIS1 MAP MODE MAP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MAP - 52" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS_control/capt/map_mode_pos" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b1ea9312-74cc-4f13-916e-3c31ba651ae7">
+      <active>true</active>
+      <description>EFIS1 MAP MODE PLAN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="PLAN - 53" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS_control/capt/map_mode_pos" expression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="418420d5-89d3-4be1-928e-1b3d2c8e2f43">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 5 -A4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a873f62d-b529-4051-bdce-4b07ec0b8368">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 10 - A5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="564d65e2-966a-48ca-a456-d33c42302e2c">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 20</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 20 - A6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="97a9cae6-10b1-4214-9381-1458863509cc">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 40</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 40 - A7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b14aace-83ac-4e5b-a4e8-d053c9576d76">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 80</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 80 - A8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="503078da-06c4-469b-98ea-1f1b3bbf25cd">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 160</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 160 - A9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="77c8d6f6-4883-4201-9f80-4169486f5d51">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 320</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 320 - A10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d5be037b-8363-405f-a3f6-29c9b4275d5a">
+      <active>true</active>
+      <description>EFIS1 MAP RANGE 640</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 640 - A11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/EFIS/capt/map_range" expression="7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="22e1c92c-f259-4aab-a54c-b191b2ad17d5">
+      <active>true</active>
+      <description>EFIS1 WXR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="WXR 36" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/wxr_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="46c3ed82-af79-4fcf-8b07-2d28eae1f6c6">
+      <active>true</active>
+      <description>EFIS1 STA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="STA 35" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/sta_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="85a0d7da-c025-4a4d-9401-4c41cdd4e7aa">
+      <active>true</active>
+      <description>EFIS1 WPT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="WPT 34" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/wpt_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4156b762-9233-45c3-8ab3-2f37c4d243f7">
+      <active>true</active>
+      <description>EFIS1 APT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="APPT 33" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/arpt" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6de12d70-416d-4980-aa6f-8576139d28cf">
+      <active>true</active>
+      <description>EFIS1 DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="DATA 32" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/data" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e2a31ebb-d26a-4548-80bb-465d4db478df">
+      <active>true</active>
+      <description>EFIS1 POS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="POS 31" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/pos" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0f7be994-c5f6-4a63-91c5-0fdf0c414255">
+      <active>true</active>
+      <description>EFIS1 TERR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="TERR 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/EFIS_control/capt/push_button/terr_press" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

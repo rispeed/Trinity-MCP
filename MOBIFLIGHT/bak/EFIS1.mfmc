@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>EFIS1</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="MINS-RADIO - 46" Pin="46" />
+  <Button Name="MINS-BARO - 47" Pin="47" />
+  <Button Name="RST - 48" Pin="48" />
+  <Button Name="CTR - 49" Pin="49" />
+  <Button Name="APP -50" Pin="50" />
+  <Button Name="VOR - 51" Pin="51" />
+  <Button Name="MAP - 52" Pin="52" />
+  <Button Name="PLAN - 53" Pin="53" />
+  <Encoder Name="MINS ENCA0-A1" PinLeft="54" PinRight="55" EncoderType="0" />
+  <Button Name="BARO - IN A2" Pin="56" />
+  <Button Name="BARO - HPA A3" Pin="57" />
+  <Button Name="RANGE 5 -A4" Pin="58" />
+  <Button Name="RANGE 10 - A5" Pin="59" />
+  <Button Name="RANGE 20 - A6" Pin="60" />
+  <Button Name="RANGE 40 - A7" Pin="61" />
+  <Button Name="RANGE 80 - A8" Pin="62" />
+  <Button Name="RANGE 160 - A9" Pin="63" />
+  <Button Name="RANGE 320 - A10" Pin="64" />
+  <Button Name="RANGE 640 - A11" Pin="65" />
+  <Button Name="TFC - A12" Pin="66" />
+  <Button Name="STD - A13" Pin="67" />
+  <Encoder Name="BARO ENC  A14A15" PinLeft="68" PinRight="69" EncoderType="0" />
+  <Button Name="ADF1 - 22" Pin="22" />
+  <Button Name="VOR1 - 23" Pin="23" />
+  <Button Name="VOR2 -24" Pin="24" />
+  <Button Name="ADF2 -25" Pin="25" />
+  <Button Name="FPV 28" Pin="28" />
+  <Button Name="MTRS 29" Pin="29" />
+  <Button Name="TERR 30" Pin="30" />
+  <Button Name="POS 31" Pin="31" />
+  <Button Name="DATA 32" Pin="32" />
+  <Button Name="APPT 33" Pin="33" />
+  <Button Name="WPT 34" Pin="34" />
+  <Button Name="STA 35" Pin="35" />
+  <Button Name="WXR 36" Pin="36" />
+  <Output Name="LED OUTPUT 13" Pin="13" />
+  <Output Name="LED OUTPUT2 12" Pin="12" />
+</Config>

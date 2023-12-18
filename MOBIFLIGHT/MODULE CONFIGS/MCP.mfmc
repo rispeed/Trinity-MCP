@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MCP</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="DAISYCHAIN1" ModelType="0" DinPin="47" ClsPin="45" ClkPin="43" Brightness="8" NumModules="2" />
+  <LedModule Name="DAISYCHAIN2" ModelType="0" DinPin="48" ClsPin="46" ClkPin="44" Brightness="8" NumModules="3" />
+  <Encoder Name="ENC_CAPT_CRS" PinLeft="2" PinRight="4" EncoderType="1" />
+  <Encoder Name="ENC_IAS" PinLeft="3" PinRight="5" EncoderType="1" />
+  <Encoder Name="ENC_HDG" PinLeft="18" PinRight="17" EncoderType="1" />
+  <Encoder Name="ENC_ALT" PinLeft="21" PinRight="23" EncoderType="1" />
+  <Encoder Name="ENC_VS" PinLeft="20" PinRight="22" EncoderType="1" />
+  <Encoder Name="ENC_FO_CRS" PinLeft="19" PinRight="16" EncoderType="1" />
+  <Output Name="LED_CAPTFD" Pin="26" />
+  <Output Name="LED_FOFD" Pin="8" />
+  <Output Name="LED_ATARM" Pin="25" />
+  <Button Name="TOGGLE_CAPTFD" Pin="30" />
+  <Button Name="TOGGLE_ATARM" Pin="28" />
+  <Button Name="TOGGLE_FOFD" Pin="7" />
+  <Button Name="BTN_CO" Pin="29" />
+  <Button Name="BTN_SPEEDINT" Pin="27" />
+  <Button Name="BTN_ALTINT" Pin="24" />
+  <Output Name="LED_BUTTON_CMDA" Pin="35" />
+  <Output Name="LED_BUTTON_CMDB" Pin="37" />
+  <Output Name="LED_BUTTON_CWSA" Pin="31" />
+  <Output Name="LED_BUTTON_CWSB" Pin="33" />
+  <Output Name="LED_BUTTON_N1" Pin="68" />
+  <Output Name="LED_BUTTON_SPEED" Pin="66" />
+  <Output Name="LED_BUTTON_LVLC" Pin="62" />
+  <Output Name="LED_BUTTON_HDGSE" Pin="60" />
+  <Output Name="LED_BUTTON_LNAV" Pin="58" />
+  <Output Name="LED_BUTTON_VORLO" Pin="56" />
+  <Output Name="LED_BUTTON_APP" Pin="54" />
+  <Output Name="LED_BUTTON_ALTHL" Pin="41" />
+  <Output Name="LED_BUTTON_VS" Pin="39" />
+  <Output Name="LED_BUTTON_VNAV" Pin="64" />
+  <Button Name="BTN_APDISCON" Pin="6" />
+  <Button Name="BUTTON_CWSA" Pin="32" />
+  <Button Name="BUTTON_CWSB" Pin="34" />
+  <Button Name="BUTTON_CMDA" Pin="36" />
+  <Button Name="BUTTON_CMDB" Pin="38" />
+  <Button Name="BUTTON_N1" Pin="69" />
+  <Button Name="BUTTON_SPEED" Pin="67" />
+  <Button Name="BUTTON_VNAV" Pin="65" />
+  <Button Name="BUTTON_LVLCHANGE" Pin="63" />
+  <Button Name="BUTTON_HDGSEL" Pin="61" />
+  <Button Name="BUTTON_LNAV" Pin="59" />
+  <Button Name="BUTTON_VORLOC" Pin="57" />
+  <Button Name="BUTTON_APP" Pin="55" />
+  <Button Name="BUTTON_ALTHLD" Pin="42" />
+  <Button Name="BUTTON_VS" Pin="40" />
+  <Button Name="BANK 10" Pin="9" />
+  <Button Name="BANK 15" Pin="10" />
+  <Button Name="BANK 20" Pin="11" />
+  <Button Name="BANK 25" Pin="12" />
+  <Button Name="BANK 30" Pin="13" />
+</Config>
