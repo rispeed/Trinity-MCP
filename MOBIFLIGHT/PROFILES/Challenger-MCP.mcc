@@ -551,7 +551,7 @@
     </config>
     <config guid="db0ebba3-0eac-44e4-9294-be8cd3ec95eb">
       <active>true</active>
-      <description>FO_FD_SWITCH_POS-</description>
+      <description>FO_FD_SWITCH_POS--</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="FOFDPOS" varExpression="$" />
         <test type="Float" value="1" />
