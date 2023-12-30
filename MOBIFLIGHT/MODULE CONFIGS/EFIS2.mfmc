@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>EFIS2</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <Button Name="MINS-RADIO - A13" Pin="67" />
@@ -26,8 +27,8 @@
   <Encoder Name="BARO ENCA4-A5" PinLeft="58" PinRight="59" EncoderType="0" />
   <Button Name="ADF1 - 21" Pin="21" />
   <Button Name="VOR1 - 20" Pin="20" />
-  <Button Name="VOR2 -12" Pin="12" />
-  <Button Name="ADF2 -13" Pin="13" />
+  <Button Name="VOR2 -23" Pin="23" />
+  <Button Name="ADF2 -22" Pin="22" />
   <Button Name="FPV 15" Pin="15" />
   <Button Name="MTRS 14" Pin="14" />
   <Button Name="TERR 11" Pin="11" />
