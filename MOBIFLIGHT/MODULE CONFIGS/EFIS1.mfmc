@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>EFIS1</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <Button Name="MINS-RADIO - 46" Pin="46" />

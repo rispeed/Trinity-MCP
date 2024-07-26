@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>MobiFlight Nano</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Stepper Name="Stepper" Pin1="6" Pin2="7" Pin3="8" Pin4="9" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="255" />
+</Config>

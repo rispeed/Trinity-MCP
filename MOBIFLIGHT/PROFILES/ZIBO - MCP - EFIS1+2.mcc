@@ -11,7 +11,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -28,7 +28,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -45,7 +45,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue="   " elseValue="  " />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
         </preconditions>
@@ -62,7 +62,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
         </preconditions>
@@ -79,7 +79,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
         </preconditions>
@@ -96,7 +96,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue=" " elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="1" logic="and" />
         </preconditions>
@@ -113,7 +113,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -130,7 +130,7 @@
           <transformation active="True" expression="Round($,0)" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
         <preconditions>
           <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
@@ -149,7 +149,7 @@
           <transformation active="True" expression="Round($/1,2)" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
         <preconditions>
           <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
@@ -168,7 +168,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue="    " elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar=" " ledDigits="0,1,2,3,4" />
         <preconditions>
           <precondition type="config" active="true" ref="5a1f9961-8886-4910-9f6c-948270251c73" operand="=" value="0" logic="or" />
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="=" value="0" logic="and" />
@@ -186,7 +186,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -203,7 +203,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="=" value="1" logic="and" />
         </preconditions>
@@ -220,7 +220,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="0" operand="=" ifValue="5" elseValue="1" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" ledDecimalPoints="1" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" ledDecimalPoints="1" />
         <preconditions>
           <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="=" value="0" logic="and" />
         </preconditions>
@@ -237,7 +237,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
         <preconditions>
           <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -269,7 +269,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff" operand="=" value="0" logic="and" />
           <precondition type="config" active="true" ref="0a8ba92f-c399-440b-8019-da08f61b2d0f" operand="=" value="1" logic="and" />
@@ -287,7 +287,7 @@
           <transformation active="False" expression="$" />
           <comparison active="True" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_FOFD" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_FOFD" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="7f6e64dd-0e28-4ca5-99dc-a09cbd921fff" operand="=" value="2" logic="and" />
           <precondition type="config" active="true" ref="663ae265-cf86-49b8-a983-39f2ecb84008" operand="=" value="1" logic="and" />
@@ -305,7 +305,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_ATARM" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_ATARM" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -320,7 +320,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CMDA" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CMDA" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -335,7 +335,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CMDB" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CMDB" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -350,7 +350,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CWSA" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CWSA" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -365,7 +365,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_CWSB" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CWSB" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -380,7 +380,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_N1" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_N1" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -395,7 +395,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_SPEED" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_SPEED" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -410,7 +410,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_LVLC" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_LVLC" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -425,7 +425,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_HDGSE" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_HDGSE" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -440,7 +440,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_LNAV" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_LNAV" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -455,7 +455,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VNAV" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VNAV" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -470,7 +470,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VORLO" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VORLO" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -485,7 +485,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_APP" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_APP" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -500,7 +500,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_ALTHL" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_ALTHL" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -515,7 +515,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="MCP/ SN-b6c-08c" trigger="normal" pin="LED_BUTTON_VS" pinBrightness="255" />
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VS" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -650,7 +650,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="0" operand="&gt;" ifValue=" #" elseValue="0" />
         </modifiers>
-        <display type="Display Module" serial="MCP/ SN-b6c-08c" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" ledDecimalPoints="0,1,2" />
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" ledDecimalPoints="0,1,2" />
         <preconditions>
           <precondition type="config" active="true" ref="bdcf1087-c7aa-49e0-8b73-70434ec6dc7b" operand="&gt;" value="0" logic="and" />
           <precondition type="config" active="true" ref="646c992d-d091-46bb-b1e2-8cb5a49d1473" operand="&gt;" value="0" logic="and" />
@@ -670,7 +670,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="MCP/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -685,7 +685,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="InputAction" serial="MCP/ SN-b6c-08c" trigger="normal">
+        <display type="InputAction" serial="MCP/ SN-378-E91" trigger="normal">
           <analog>
             <onChange type="VariableInputAction" varType="number" varName="BANK_ANGLE_PREV_POS" varExpression="@" />
           </analog>
@@ -704,7 +704,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="MCP/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -719,7 +719,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="MCP/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -731,7 +731,7 @@
         <source type="Variable" varType="number" varName="" varExpression="$" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="-" serial="MCP/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -799,7 +799,7 @@
         <source type="Variable" varType="number" varName="" varExpression="$" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="-" serial="MCP/ SN-b6c-08c" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -860,12 +860,113 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="de1f677d-7a35-48cb-af2f-d2f85635348b">
+      <active>true</active>
+      <description>---------------------------------------------------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8b3a5a55-b00c-46e5-967b-a477bf353a02">
+      <active>true</active>
+      <description>PILOT MMR FREQ</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/nav/mmr_channel" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8be955c0-2241-4e27-bbdf-e79cff02fdb3">
+      <active>true</active>
+      <description>PILOT MMR FREQ_STANDBY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_stdby_freq_hz" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e10c6bff-d575-4cd2-aab0-bc22e9cb4cdc">
+      <active>true</active>
+      <description>PILOT MMR MODE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/mmr/cpt/act_mode" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="VOR" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f701bce-1af1-441f-8cf6-e4ccc359bf45">
+      <active>true</active>
+      <description>PILOT MMR MODE_STANDBY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/mmr/cpt/stby_mode" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d751337-5a3b-4331-a705-b86f79b193b8">
+      <active>true</active>
+      <description>PILOT_MMR_MODE_TXT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="PILOT_MMR_MODE_TEXT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="False" value="0" operand="=" ifValue="vor" elseValue="" />
+          <transformation active="True" expression="if(#=1,'ils','vor')" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="e10c6bff-d575-4cd2-aab0-bc22e9cb4cdc" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="254a05bd-a596-461f-9cb9-d56150ca8c43">
+      <active>true</active>
+      <description>PILOT_MMR_LINE1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="PILOT_MMR_MODE_TEXT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="TEst box/ SN-50C-715" trigger="normal" address="LcdDisplay">
+          <line>!!!       ###.##</line>
+          <line>@@@       ???.??</line>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="8b3a5a55-b00c-46e5-967b-a477bf353a02" placeholder="#" />
+          <configref active="True" ref="9d751337-5a3b-4331-a705-b86f79b193b8" placeholder="!" />
+          <configref active="True" ref="8be955c0-2241-4e27-bbdf-e79cff02fdb3" placeholder="?" />
+          <configref active="True" ref="1f701bce-1af1-441f-8cf6-e4ccc359bf45" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="8e65b83a-5dbc-4c8e-b51f-6651e35c644d">
       <active>true</active>
       <description>ENCODER CAPT_COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_pilot_dn" expression="" />
           <onLeftFast />
@@ -879,7 +980,7 @@
     <config guid="1723ef36-396e-4a55-bfa5-2e1f1124b56f">
       <active>true</active>
       <description>ENCODER FO_COURSE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/course_copilot_dn" expression="" />
           <onLeftFast />
@@ -893,7 +994,7 @@
     <config guid="f6395901-3905-4c93-9c99-ecedc29c70a0">
       <active>true</active>
       <description>ENCODER HEADING</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/heading_dn" expression="" />
           <onLeftFast />
@@ -907,7 +1008,7 @@
     <config guid="e7aa3cc8-2264-452e-8d25-4a2279032537">
       <active>true</active>
       <description>ENCODER IAS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-1" />
           <onLeftFast type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-5" />
@@ -925,7 +1026,7 @@
     <config guid="ff578234-a49f-4ea9-a53a-75e90fba92e0">
       <active>true</active>
       <description>ENCODER MACH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="DataRef" path="laminar/B738/autopilot/mcp_speed_dial_kts_mach" expression="#-0.01" />
           <onLeftFast />
@@ -943,7 +1044,7 @@
     <config guid="f4e538f8-4988-4288-a120-3ab095246f0b">
       <active>true</active>
       <description>ENCODER ALTITUDE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/altitude_dn" expression="#-1" />
           <onLeftFast />
@@ -957,7 +1058,7 @@
     <config guid="379e4667-3988-4ac3-a9ee-79cba188e031">
       <active>true</active>
       <description>ENCODER VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="#-1" />
           <onLeftFast />
@@ -971,7 +1072,7 @@
     <config guid="01355cde-4b53-45f2-8165-558deb801872">
       <active>true</active>
       <description>TOGGLE_CAPTFD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="1" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_ca" expression="0" />
@@ -983,7 +1084,7 @@
     <config guid="58728eae-fa90-41bc-9ed9-88183086413e">
       <active>true</active>
       <description>TOGGLE_FOFD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="1" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="laminar/B738/switches/autopilot/fd_fo" expression="0" />
@@ -995,7 +1096,7 @@
     <config guid="bfbbe729-4693-49b5-851d-bde8c55ebeec">
       <active>true</active>
       <description>TOGGLE_ATARM</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="0" />
         </button>
@@ -1008,7 +1109,7 @@
     <config guid="5f8afd21-0315-4891-83a0-851da31ecb0f">
       <active>true</active>
       <description>TOGGLE_ATDISARM</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onRelease type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/autothrottle_arm_toggle" expression="" />
         </button>
@@ -1021,7 +1122,7 @@
     <config guid="4a0a668e-445e-4c0c-b4f7-7e4ee91d12fc">
       <active>true</active>
       <description>AP DISCONNECT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/disconnect_toggle" expression="" />
         </button>
@@ -1032,7 +1133,7 @@
     <config guid="f83ab816-fb69-465f-ab84-96ba23a4f3f1">
       <active>true</active>
       <description>COBUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/change_over_press" expression="" />
         </button>
@@ -1043,7 +1144,7 @@
     <config guid="a9c46121-13c0-49ee-8579-eab3205f4bee">
       <active>true</active>
       <description>SPEED INT BUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/spd_interv" expression="" />
         </button>
@@ -1054,7 +1155,7 @@
     <config guid="96eeab41-62d8-4ac4-8146-a5258a0a226a">
       <active>true</active>
       <description>ALT INT BUTTON</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_interv" expression="" />
         </button>
@@ -1065,7 +1166,7 @@
     <config guid="81b15486-c7ae-436c-812a-19b971c6d41a">
       <active>true</active>
       <description>BUTTON_CWSA</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_a_press" expression="" />
         </button>
@@ -1076,7 +1177,7 @@
     <config guid="cf942701-dec3-45f7-987a-b98328bcddfa">
       <active>true</active>
       <description>BUTTON_CWSB</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cws_b_press" expression="" />
         </button>
@@ -1087,7 +1188,7 @@
     <config guid="2bce9420-9969-45ed-87ce-967fb4b36e1b">
       <active>true</active>
       <description>BUTTON_CMDA</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_a_press" expression="" />
         </button>
@@ -1098,7 +1199,7 @@
     <config guid="d7ab5e52-8d1f-42c2-bb58-59a08ada1a3d">
       <active>true</active>
       <description>BUTTON_CMDB</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/cmd_b_press" expression="" />
         </button>
@@ -1109,7 +1210,7 @@
     <config guid="a4322e57-a165-4085-b5e2-68685ff912cb">
       <active>true</active>
       <description>BUTTON_n1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/n1_press" expression="" />
         </button>
@@ -1120,7 +1221,7 @@
     <config guid="a0341405-d9e9-4cec-8a05-3e684a1d488a">
       <active>true</active>
       <description>BUTTON_SPEED</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/speed_press" expression="" />
         </button>
@@ -1131,7 +1232,7 @@
     <config guid="cc2f46e7-0db0-4357-805e-b5a4124e40c9">
       <active>true</active>
       <description>BUTTON_VNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vnav_press" expression="" />
         </button>
@@ -1142,7 +1243,7 @@
     <config guid="1c29b4e3-4496-4d8d-ad2a-11d0a763e574">
       <active>true</active>
       <description>BUTTON_LVLCHANGE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lvl_chg_press" expression="" />
         </button>
@@ -1153,7 +1254,7 @@
     <config guid="3db2dbef-9a9c-4c0b-939b-49d8552795eb">
       <active>true</active>
       <description>BUTTON_HDGSEL</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/hdg_sel_press" expression="" />
         </button>
@@ -1164,7 +1265,7 @@
     <config guid="83b6639c-fe7a-45c0-8be6-4b86c0d4955b">
       <active>true</active>
       <description>BUTTON_LNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/lnav_press" expression="" />
         </button>
@@ -1175,7 +1276,7 @@
     <config guid="5861bf8f-dbe9-4958-87e6-efce8eb0bf28">
       <active>true</active>
       <description>BUTTON_VORLOC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vorloc_press" expression="" />
         </button>
@@ -1186,7 +1287,7 @@
     <config guid="287eacee-38a0-4c8e-a7e5-6300f6ec5d95">
       <active>true</active>
       <description>BUTTON_APP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/app_press" expression="" />
         </button>
@@ -1197,7 +1298,7 @@
     <config guid="ada6e467-7951-4604-84bc-63d63cba7df0">
       <active>true</active>
       <description>BUTTON_ALTHLD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/alt_hld_press" expression="" />
         </button>
@@ -1208,7 +1309,7 @@
     <config guid="176651a0-48a7-4732-9644-07dbc0910602">
       <active>true</active>
       <description>BUTTON_VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/vs_press" expression="" />
         </button>
@@ -1219,7 +1320,7 @@
     <config guid="ebe021dd-7304-45f5-8613-1277ffd595e2">
       <active>true</active>
       <description>BANK ANGLE 15 UP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
         </button>
@@ -1232,7 +1333,7 @@
     <config guid="d7025e59-90a2-4075-8daf-af2fe816c155">
       <active>true</active>
       <description>BANK ANGLE 20 UP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
         </button>
@@ -1245,7 +1346,7 @@
     <config guid="59d108e6-e136-4d3d-ba2a-3e825111ff5b">
       <active>true</active>
       <description>BANK ANGLE 25 UP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
         </button>
@@ -1258,7 +1359,7 @@
     <config guid="fcbf0dfc-88b4-4569-8c5a-bd50cf8b20db">
       <active>true</active>
       <description>BANK ANGLE 30 UP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_up" expression="1" />
         </button>
@@ -1271,7 +1372,7 @@
     <config guid="6365d19d-0b9d-46bc-a240-0066cbf3a60c">
       <active>true</active>
       <description>BANK ANGLE 25 DOWN</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
         </button>
@@ -1284,7 +1385,7 @@
     <config guid="f61c38c5-71de-4781-a5ea-deb601d072f2">
       <active>true</active>
       <description>BANK ANGLE 20 DOWN</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
         </button>
@@ -1297,7 +1398,7 @@
     <config guid="faa3f110-a622-474f-8548-cd5828d25bea">
       <active>true</active>
       <description>BANK ANGLE 15 DOWN</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
         </button>
@@ -1310,7 +1411,7 @@
     <config guid="d8f02b1b-1de6-46ee-9ba2-a5a9f4bb127b">
       <active>true</active>
       <description>BANK ANGLE 10 DOWN</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-b6c-08c" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.2.2, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="laminar/B738/autopilot/bank_angle_dn" expression="1" />
         </button>

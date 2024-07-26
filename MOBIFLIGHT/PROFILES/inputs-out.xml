@@ -1,0 +1,377 @@
+    <MobiflightConnector>
+        <inputs>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>---------------------------------------------------- RIGHT EFIS INPUTS</description>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>---------------------------------------------------- MODES</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR2 -24" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MINS - RADIO </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-RADIO - 46" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MINS - BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-BARO - 47" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>BARO - IN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - IN A2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>BARO - HPA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - HPA A3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MODE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="APP -50" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR - 51" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MAP - 52" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="PLAN - 53" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 5 -A4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 10 - A5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 20 - A6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 40 - A7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 80 - A8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 160 - A9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 320 - A10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 640 - A11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR1 - 23" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>VOR (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF1 - 22" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>VOR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR2 -24" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>VOR2 (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF2 -25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>---------------------------------- KNOBS</description>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>DCP MENU INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>DCP MENU OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>DCP RANGE INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>DCP RANGE OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>CCP MENU INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>CCP MENU OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RADIO KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>true</active>
+      <description>RADIO KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_down" expression="" />
+          <onRightFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    </inputs>
+    </MobiflightConnector>
+    

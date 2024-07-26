@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>CCP1MEGA</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="CCP1_LED" Pin="46" />
+  <Encoder Name="MENU_INNER" PinLeft="25" PinRight="27" EncoderType="0" />
+  <Encoder Name="MENU_OUTER" PinLeft="29" PinRight="31" EncoderType="0" />
+  <Encoder Name="RADIO_INNER" PinLeft="30" PinRight="28" EncoderType="0" />
+  <Encoder Name="RADIO_OUTER" PinLeft="65" PinRight="67" EncoderType="0" />
+  <Button Name="UPR_MENU" Pin="16" />
+  <Button Name="ESC" Pin="22" />
+  <Button Name="LWR_MENU" Pin="20" />
+  <Button Name="LWR_FRMT" Pin="18" />
+  <Button Name="TFC" Pin="24" />
+  <Button Name="TR_WX" Pin="14" />
+  <Button Name="MEM_3" Pin="41" />
+  <Button Name="MEM_2" Pin="42" />
+  <Button Name="MEM_1" Pin="44" />
+  <Button Name="MENU_PUSH" Pin="23" />
+  <Button Name="ZOOM" Pin="35" />
+  <Button Name="ORIENT" Pin="36" />
+  <Button Name="CHART" Pin="38" />
+  <Button Name="JSTK" Pin="40" />
+  <Button Name="JSTK_RIGHT" Pin="54" />
+  <Button Name="JSTK_LEFT" Pin="56" />
+  <Button Name="JSTK_UP" Pin="58" />
+  <Button Name="JSTK_DOWN" Pin="60" />
+  <Button Name="1_2" Pin="55" />
+  <Button Name="IDENT" Pin="57" />
+  <Button Name="DME_H" Pin="59" />
+  <Button Name="ATC" Pin="61" />
+  <Button Name="RADIO" Pin="39" />
+  <Button Name="FREQ" Pin="45" />
+  <Button Name="RADIO_PUSH" Pin="26" />
+  <Button Name="CAS" Pin="15" />
+  <Button Name="SUMRY" Pin="17" />
+  <Button Name="FLT" Pin="19" />
+  <Button Name="DC_ELEC" Pin="21" />
+  <Button Name="HYD" Pin="37" />
+  <Button Name="AC_ELEC" Pin="43" />
+  <Button Name="SIDE_SELECTOR" Pin="53" />
+</Config>

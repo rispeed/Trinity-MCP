@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>MCP</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
-  <LedModule Name="DAISYCHAIN1" ModelType="0" DinPin="47" ClsPin="45" ClkPin="43" Brightness="8" NumModules="2" />
-  <LedModule Name="DAISYCHAIN2" ModelType="0" DinPin="48" ClsPin="46" ClkPin="44" Brightness="8" NumModules="3" />
+  <LedModule Name="DAISYCHAIN1" ModelType="0" DinPin="47" ClsPin="45" ClkPin="43" Brightness="4" NumModules="2" />
+  <LedModule Name="DAISYCHAIN2" ModelType="0" DinPin="48" ClsPin="46" ClkPin="44" Brightness="4" NumModules="3" />
   <Encoder Name="ENC_CAPT_CRS" PinLeft="2" PinRight="4" EncoderType="1" />
   <Encoder Name="ENC_IAS" PinLeft="3" PinRight="5" EncoderType="1" />
   <Encoder Name="ENC_HDG" PinLeft="18" PinRight="17" EncoderType="1" />

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>DCPCCPmega2</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="SPEAKER" Pin="2" />
+  <Output Name="LED" Pin="3" />
+  <Button Name="DCP_MENU" Pin="17" />
+  <Button Name="DCP_ESC" Pin="19" />
+  <Button Name="DCP_NAV_SRC" Pin="15" />
+  <Button Name="DCP_FRMT" Pin="67" />
+  <Button Name="DCP_TFC" Pin="69" />
+  <Button Name="DCP_TR_WX" Pin="33" />
+  <Button Name="DCP_BRG_SRC" Pin="14" />
+  <Button Name="DCP_REFS" Pin="16" />
+  <Button Name="DCP_RDR_MENU" Pin="65" />
+  <Button Name="DCP_RADAR" Pin="18" />
+  <Button Name="CCP_UPR_MENU" Pin="29" />
+  <Button Name="CCP_LWR_MENU" Pin="25" />
+  <Button Name="CCP_ESC" Pin="23" />
+  <Button Name="CCP_LWR_FRMT" Pin="27" />
+  <Button Name="CCP_TFC" Pin="21" />
+  <Button Name="CCP_TR_WX" Pin="31" />
+  <Button Name="CCP_MEM_1" Pin="63" />
+  <Button Name="CCP_MEM_2" Pin="61" />
+  <Button Name="CCP_MEM_3" Pin="26" />
+  <Button Name="CCP_CHART" Pin="57" />
+  <Button Name="CCP_JSTK" Pin="59" />
+  <Button Name="CCP_ORIENT" Pin="55" />
+  <Button Name="CCP_ZOOM_DOWN" Pin="20" />
+  <Button Name="CCP_ZOOM_UP" Pin="5" />
+  <Button Name="CCP_SUMRY" Pin="37" />
+  <Button Name="CCP_AC_ELEC" Pin="28" />
+  <Button Name="CCP_DC_ELEC" Pin="41" />
+  <Button Name="CCP_HYD" Pin="22" />
+  <Button Name="CCP_FLT" Pin="39" />
+  <Button Name="CCP_CAS" Pin="35" />
+  <Button Name="CCP_RADIO" Pin="24" />
+  <Button Name="CCP_FREQ" Pin="30" />
+  <Button Name="CCP_1_2" Pin="60" />
+  <Button Name="CCP_DME_H" Pin="56" />
+  <Button Name="CCP_IDENT" Pin="57" />
+  <Button Name="CCP_ATC" Pin="54" />
+  <Button Name="CCP_JSTK_UP" Pin="66" />
+  <Button Name="CCP_JSTK_DOWN" Pin="68" />
+  <Button Name="CCP_JSTK_LEFT" Pin="64" />
+  <Button Name="CCP_JSTK_RIGHT" Pin="62" />
+  <Button Name="DCP_MENU_PUSH" Pin="32" />
+  <Button Name="DCP_TILT_PUSH" Pin="4" />
+  <Button Name="CCP_MENU_PUSH" Pin="52" />
+  <Button Name="CCP_RADIO_PUSH" Pin="53" />
+  <Button Name="SIDE_SELECTOR" Pin="46" />
+  <Encoder Name="DCP_ENC_MENUDATA" PinLeft="34" PinRight="36" EncoderType="0" />
+  <Encoder Name="DCP_ENC_MENUADV" PinLeft="38" PinRight="40" EncoderType="0" />
+  <Encoder Name="DCP_ENC_RDRDATA" PinLeft="6" PinRight="12" EncoderType="0" />
+  <Encoder Name="DCP_ENC_RDRTILT" PinLeft="8" PinRight="10" EncoderType="0" />
+  <Encoder Name="CCP_ENC_MENUDATA" PinLeft="48" PinRight="50" EncoderType="0" />
+  <Encoder Name="CCP_ENC_MENUADV" PinLeft="43" PinRight="45" EncoderType="0" />
+  <Encoder Name="CCP_ENC_RADDATA" PinLeft="49" PinRight="51" EncoderType="0" />
+  <Encoder Name="CCP_ENC_RADADV" PinLeft="42" PinRight="44" EncoderType="0" />
+</Config>

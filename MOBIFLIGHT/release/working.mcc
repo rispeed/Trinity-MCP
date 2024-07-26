@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+ 
+  <inputs>
+   
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MENU_DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_MENUDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MENU_DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_MENUDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MENU_ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_MENUADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MENU_ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_MENUADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MENU_PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MENU_PUSH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/menu_push_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/menu_push_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MENU_PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MENU_PUSH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/menu_push_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/menu_push_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-RADIO_DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_RADDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-RADIO_DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_RADDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-RADIO_ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_RADADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-RADIO_ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ENC_RADADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-RADIO_PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_RADIO_PUSH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/radio_push_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/radio_push_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-RADIO_PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_RADIO_PUSH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/radio_push_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/radio_push_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-JSTK_UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_up_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_up_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-JSTK_UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_up_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_up_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-JSTK_DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_DOWN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_down_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_down_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-JSTK_DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_DOWN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_down_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_down_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-JSTK_LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_LEFT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_left_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_left_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-JSTK_LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_LEFT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_left_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_left_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-JSTK_RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_RIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_right_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_right_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-JSTK_RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK_RIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_right_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_right_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-UPR_MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_UPR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/upr_menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/upr_menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-UPR_MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_UPR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/upr_menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/upr_menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-LWR_MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_LWR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/lwr_menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/lwr_menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-LWR_MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_LWR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/lwr_menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/lwr_menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-ESC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ESC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/esc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/esc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-ESC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ESC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/esc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/esc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-LWR_FRMT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_LWR_FRMT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/lwr_frmt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/lwr_frmt_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-LWR_FRMT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_LWR_FRMT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/lwr_frmt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/lwr_frmt_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_TFC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/tfc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/tfc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_TFC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/tfc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/tfc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-TR_WX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_TR_WX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/tr_wx_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/tr_wx_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-TR_WX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_TR_WX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/tr_wx_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/tr_wx_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-SUMRY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_SUMRY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/sumry_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/sumry_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-SUMRY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_SUMRY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/sumry_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/sumry_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-DC_ELEC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_DC_ELEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/dc_elec_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/dc_elec_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-DC_ELEC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_DC_ELEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/dc_elec_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/dc_elec_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-AC_ELEC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_AC_ELEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/ac_elec_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/ac_elec_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-AC_ELEC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_AC_ELEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/ac_elec_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/ac_elec_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-FLT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_FLT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/flt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/flt_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-FLT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_FLT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/flt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/flt_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-HYD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_HYD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/hyd_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/hyd_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-HYD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_HYD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/hyd_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/hyd_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-CAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_CAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/cas_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/cas_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-CAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_CAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/cas_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/cas_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-ATC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ATC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/atc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/atc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-ATC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ATC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/atc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/atc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-IDENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/ident_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/ident_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-IDENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/ident_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/ident_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-DME_H</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_DME_H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/dme_h_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/dme_h_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-DME_H</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_DME_H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/dme_h_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/dme_h_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-1_2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_1_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/1_2_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/1_2_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-1_2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_1_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/1_2_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/1_2_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-FREQ</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_FREQ" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/freq_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/freq_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-FREQ</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_FREQ" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/freq_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/freq_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-RADIO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_RADIO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/radio_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/radio_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-RADIO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_RADIO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/radio_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/radio_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MEM_1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem1_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem1_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MEM_1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem1_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem1_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MEM_2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem2_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem2_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MEM_2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem2_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem2_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-MEM_3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem3_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/mem3_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-MEM_3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_MEM_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem3_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/mem3_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-CHART</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_CHART" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/chart_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/chart_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-CHART</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_CHART" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/chart_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/chart_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-JSTK</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/jstk_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-JSTK</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_JSTK" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/jstk_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-ORIENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ORIENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/chart_orient_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/chart_orient_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-ORIENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ORIENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/chart_orient_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/chart_orient_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-ZOOMUP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ZOOM_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/zoom_up_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/zoom_up_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-ZOOMUP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ZOOM_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/zoom_up_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/zoom_up_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2LEFT-ZOOMDOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ZOOM_DOWN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/zoom_down_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/1/zoom_down_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="NEWGUID">
+      <active>true</active>
+      <description>CCP2RIGHT-ZOOMDOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega2/ SN-D8F-39D" name="CCP_ZOOM_DOWN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/zoom_down_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/CL650/CCP/2/zoom_down_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b2afc37-1b23-4f74-858a-0088903963e4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

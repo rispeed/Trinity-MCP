@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="88184696-0391-4b1f-ad7f-a2446447cfc7">
+      <active>true</active>
+      <description>CAPTFDPOS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="CAPTFDPOS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3137d68-4622-4a94-8210-11f3d2648e7f">
+      <active>true</active>
+      <description>ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/radio_altimeter_height_ft_pilot" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="afa880e8-34d3-4f39-befc-1d0b44308b1f">
+      <active>true</active>
+      <description>vs</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/vvi_fpm_copilot" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cbc44a22-6902-4866-a120-3aaca7560ce9">
+      <active>true</active>
+      <description>vs Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/groundspeed" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="3" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9043417d-3c57-4051-8d59-ea79d8223c45">
+      <active>true</active>
+      <description>LED POWER</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="CAPTFDPOS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="255" />
+        </modifiers>
+        <display type="Output" serial="DCPCCPmega1/ SN-F83-546" trigger="normal" pin="LED" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="03d08ddb-5fda-4ca7-b326-78ddfda24612">
+      <active>false</active>
+      <description>Range</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="DCP_ENC_RDRDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_in" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_out" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="591db3c9-1f6b-424a-96bf-7e727321c981">
+      <active>true</active>
+      <description>430 coarse down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="DCP_ENC_MENUADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_coarse_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_coarse_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="adbcaaf4-e2eb-4059-8502-b8388047ab6f">
+      <active>true</active>
+      <description>530 coarse</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="CCP_ENC_MENUADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_coarse_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_coarse_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a65e9527-21dd-4cd3-afc7-c1b4bb8c8180">
+      <active>true</active>
+      <description>430 fine </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="DCP_ENC_MENUDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_fine_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_fine_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="335b39e5-85c4-48eb-be91-2753c0517d7d">
+      <active>true</active>
+      <description>530 fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="CCP_ENC_MENUDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_fine_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_fine_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ab354d3-36d1-489e-994f-32b6a5e5d5c4">
+      <active>true</active>
+      <description>430 chapter</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="DCP_ENC_RDRTILT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_chapter_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_chapter_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f731058b-27b4-44fb-93a5-9b56268ca54c">
+      <active>true</active>
+      <description>530 chapter</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="CCP_ENC_RADADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_chapter_dn" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_chapter_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb6ef1b9-d67f-4833-b71f-4547aa4d9591">
+      <active>true</active>
+      <description>430 page</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="DCP_ENC_RDRDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_page_up" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n2_page_dn" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ac80c601-735f-43de-add0-7840ed748830">
+      <active>true</active>
+      <description>530 page</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="DCPCCPmega1/ SN-F83-546" name="CCP_ENC_RADDATA" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_page_up" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_page_dn" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="90effd4a-3a47-4e07-9a42-8128f8193737">
+      <active>true</active>
+      <description>alt hold</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_ALTHLD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_hold" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33d222aa-72e6-4c58-8bc7-5be03e2bff54">
+      <active>true</active>
+      <description>heading</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="79e55e0b-caa9-45ee-a078-c95c12d0b947">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/NAV" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="549c59b9-c9cd-46a2-8dae-9c3f6dc9ff85">
+      <active>true</active>
+      <description>SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/autopilot/speed_hold" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

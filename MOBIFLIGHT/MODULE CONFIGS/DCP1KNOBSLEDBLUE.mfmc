@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>DCP1KNOBSLEDBLUE</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="LED_BRIGHTNESS" Pin="12" />
+  <Encoder Name="Encoder1" PinLeft="2" PinRight="3" EncoderType="0" />
+  <Encoder Name="Encode2" PinLeft="5" PinRight="4" EncoderType="0" />
+  <Button Name="ENCDER PRESS" Pin="6" />
+  <Encoder Name="Encoder3" PinLeft="7" PinRight="8" EncoderType="0" />
+  <Encoder Name="Encoder4" PinLeft="9" PinRight="10" EncoderType="0" />
+  <Button Name="ENCODER 2 PRESS" Pin="11" />
+  <Button Name="SideSelectorBtn" Pin="14" />
+</Config>

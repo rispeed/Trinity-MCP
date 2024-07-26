@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>CCPTESTER</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="2" />
+  <Button Name="Button 1" Pin="3" />
+  <Button Name="Button 2" Pin="4" />
+  <Button Name="Button 3" Pin="5" />
+  <Button Name="Button 4" Pin="6" />
+  <Button Name="Button 5" Pin="7" />
+  <Button Name="Button 6" Pin="8" />
+  <Button Name="Button 7" Pin="9" />
+  <Button Name="Button 8" Pin="10" />
+  <Button Name="Button 9" Pin="11" />
+  <Button Name="Button 10" Pin="12" />
+  <Button Name="Button 11" Pin="13" />
+  <Button Name="Button 12" Pin="14" />
+  <Button Name="Button 13" Pin="15" />
+  <Button Name="Button 14" Pin="16" />
+  <Button Name="Button 15" Pin="17" />
+  <Button Name="Button 16" Pin="18" />
+  <Button Name="Button 17" Pin="19" />
+</Config>

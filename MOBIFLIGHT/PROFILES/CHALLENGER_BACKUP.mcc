@@ -1,0 +1,2410 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="ca9aabe8-54da-46c2-bf55-0d7c765a1369">
+      <active>true</active>
+      <description>CAPTAIN COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/FDCU-1/words/FCC/0/CRS_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7f16c3c7-2e7f-4d98-98fc-78ff1175819f">
+      <active>true</active>
+      <description>HEADING</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/RA-GP-5/words/FCC/1/HDG_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12">
+      <active>true</active>
+      <description>IAS -mach</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/LB-FCC-1/words/FCC/1/MACH_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,2)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&gt;" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7104ecf-f9bd-48fd-8929-ce599ef319c4">
+      <active>true</active>
+      <description>IAS -knots</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/LB-IOC-1/words/FCC/0/IAS_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($*1.94384,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN1" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="a2d0f90e-20f5-4dc9-a523-4350c0365987" operand="&lt;" value="0.1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cd8fb1f8-c7dd-4995-bbc1-d1af0d634e3e">
+      <active>true</active>
+      <description>ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/FDCU-1/words/FCC/0/ALT_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round((Round(Round($,0)*3.2809,0)/10),0)*10" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="98c757ae-eb76-4fbf-a426-33fc33cbf063">
+      <active>true</active>
+      <description>VERTICAL SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/FDCU-1/words/FCC/0/VS_TGT" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($*196.8504,0)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5e602256-4279-4000-afa8-9f8f99e6eaac">
+      <active>false</active>
+      <description>VERTICAL SPEED Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="VS_COPY" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+          <comparison active="True" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="2" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="98c757ae-eb76-4fbf-a426-33fc33cbf063" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="98c757ae-eb76-4fbf-a426-33fc33cbf063" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ee359f45-0a7f-4707-b44b-169fc8c80d44">
+      <active>true</active>
+      <description>FO COURSE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/FDCU-1/words/FCC/1/CRS_SEL" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MCP/ SN-378-E91" trigger="normal" ledAddress="DAISYCHAIN2" ledConnector="3" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="90508a3d-f2e3-4e35-98b5-e1e376cee21c" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a268338f-5068-4812-9c1f-b0efd41e05d3">
+      <active>true</active>
+      <description>LED_CAPTFD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="xxx" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_CAPTFD" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6bbd33fb-77ad-4719-80f2-0e9564eceaba">
+      <active>true</active>
+      <description>LED_FOFD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="xxxXXX" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_FOFD" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="74e18048-fa3d-47c1-b29c-a882da751edb">
+      <active>true</active>
+      <description>LED_ATARM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/L-DCU-7/words/ATS/0/ENG" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_ATARM" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c7ed0cd-cebe-4826-901f-6457195b6bb2">
+      <active>true</active>
+      <description>LED_BUTTON_CMDA - GROUND SPOILERS ARMED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/gnd_spoilers" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CMDA" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ddfc7952-5553-4403-bad5-35a4d42d12ef">
+      <active>false</active>
+      <description>LED_BUTTON_CWSA - REVERSE ARMED L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/thr_rev/arm_L_value" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CWSA" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="562f6762-8217-46ac-bc94-a3a4acd36279">
+      <active>false</active>
+      <description>LED_BUTTON_CWSB - REVERSE ARMED R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/thr_rev/arm_R_value" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CWSB" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d211af20-05fd-4c94-8708-31066de270e3">
+      <active>true</active>
+      <description>LED_BUTTON_HDGSEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/modules/FCP/0/wires/LAMP_HDG_1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_HDGSE" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0cf32352-0223-43d6-a02b-47cfd048d836">
+      <active>true</active>
+      <description>LED_BUTTON_VS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/RA-FCC-1/words/FCC/2/VERT_MODE_ACT" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="5" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VS" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fcc3750b-31ff-44b9-86b0-e99a0c816895">
+      <active>true</active>
+      <description>LED_BUTTON_LNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/modules/FCP/0/wires/LAMP_NAV_1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_LNAV" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="feaea447-f1d6-430a-aad2-a1302bc766ee">
+      <active>true</active>
+      <description>LED_BUTTON_VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/modules/FCP/0/wires/LAMP_VNAV_1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VNAV" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="290edf84-93c5-49fb-970e-cbfd58f2cbd7">
+      <active>true</active>
+      <description>LED_BUTTON_APP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/modules/FCP/0/wires/LAMP_APPR_1" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_APP" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b853d5bd-6916-4787-a7f1-c6718a4588ea">
+      <active>true</active>
+      <description>ATPOS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/L-DCU-7/words/ATS/0/ENG" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0e42a158-2675-4ae4-b8dd-4e0d33b65c27">
+      <active>true</active>
+      <description>VS_STATUS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/FDCU-1/words/FCC/0/VS_TGT" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="Round(-1000,0) " />
+          <comparison active="False" value="" operand="&gt;" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d07acfb4-2d32-4de2-9ad7-370a77f2a417">
+      <active>false</active>
+      <description>VS_ACTUAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="VS_ACTUAL" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if(1&lt;2)" />
+          <comparison active="True" value="0" operand="!=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e42a158-2675-4ae4-b8dd-4e0d33b65c27" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a2d0f90e-20f5-4dc9-a523-4350c0365987">
+      <active>true</active>
+      <description>MACH_VAL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="abus/CL650/ARINC429/LB-FCC-1/words/FCC/1/IAS_REF" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,2)" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0406c5c2-5616-40da-a6f9-aef25de8a244">
+      <active>true</active>
+      <description>GROUND_SPOILER_VALUE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/gnd_spoilers" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c289a254-f16f-41cd-a0e0-a0d630816e28">
+      <active>true</active>
+      <description>BANK_ANGLE_SWITCH_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BANKANGLEPOS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="MCP/ SN-378-E91" trigger="normal">
+          <analog>
+            <onChange type="XplaneInputAction" inputType="DataRef" path="CL650/pedestal/flaps" expression="@" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="262f5f12-707a-4d01-88ce-2fe51b718555">
+      <active>true</active>
+      <description>CAPT_FD_SWITCH_POS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="CAPTFDPOS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7cc21bb3-d6be-495e-bf72-485043277705">
+      <active>true</active>
+      <description>MENU_KNOB_SIDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MENU_KNOB_SIDE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="MCP/ SN-378-E91" trigger="normal">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="MyVar" varExpression="$" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="953b91cf-bcec-4ae9-80c9-58e6e5dd2564">
+      <active>true</active>
+      <description>CAPTFDLIGHTON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="CAPTFDLIGHTON" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="7cc21bb3-d6be-495e-bf72-485043277705" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8e555e7d-3e4f-4a35-b8ba-217c58a58440">
+      <active>true</active>
+      <description>FOFDLIGHTON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FOFDLIGHTON" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="True" value="1" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="7cc21bb3-d6be-495e-bf72-485043277705" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cf53d62f-74a7-4ae4-a9ec-a7814d0e7792">
+      <active>true</active>
+      <description>VOR_LOC_BTN_ON_STATUS -enable radio knobs</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="VOR_LOC_BTN_STATUS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_VORLO" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da14222c-94b7-4f4e-a85d-52255f5f4893">
+      <active>true</active>
+      <description>REVERSE_STATUS_L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/thr_rev/arm_L_value" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3de23bd-8b7e-445e-a750-8b446f89747e">
+      <active>true</active>
+      <description>REVERSE_STATUS_R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/pedestal/thr_rev/arm_R_value" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78369cf3-2627-4d33-adb4-0a6759c9eb46">
+      <active>true</active>
+      <description>REVERSE_TOTAL_STATUS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="REVERSE_TOTAL_STATUS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="!+#" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="da14222c-94b7-4f4e-a85d-52255f5f4893" placeholder="#" testvalue="1" />
+          <configref active="True" ref="d3de23bd-8b7e-445e-a750-8b446f89747e" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="313c06c1-371d-41af-aad3-26a33b968605">
+      <active>true</active>
+      <description>LED_BUTTON_CMDB_REVERSE_STATUS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCP/ SN-378-E91" trigger="normal" pin="LED_BUTTON_CMDB" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="78369cf3-2627-4d33-adb4-0a6759c9eb46" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="db0ebba3-0eac-44e4-9294-be8cd3ec95eb">
+      <active>true</active>
+      <description>FO_FD_SWITCH_POS--</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FOFDPOS" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="MCP/ SN-378-E91" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="234ce788-2100-4ed0-b5c4-8a1284bb7d84">
+      <active>false</active>
+      <description>----- EFIS CONFIGURATIONS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b456982-61e9-49a6-973b-5901726b3514">
+      <active>true</active>
+      <description>EFIS1 BRIGHT ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="EFISLEDBRIGHT1" varExpression="$" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="255" />
+        </modifiers>
+        <display type="Output" serial="EFIS1/ SN-F1B-30A" trigger="normal" pin="LED OUTPUT 13|LED OUTPUT2 12" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0888473-ae40-4afc-b50a-0d1114df0a47">
+      <active>true</active>
+      <description>EFIS2 BRIGHT ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="EFISLEDBRIGHT1" varExpression="$" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="255" />
+        </modifiers>
+        <display type="Output" serial="EFIS2/ SN-229-615" trigger="normal" pin="LED OUTPUT 4|LED OUTPUT2 5" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6a6a0b72-2450-4184-bdf3-1f45510fb138">
+      <active>false</active>
+      <description>---------------------------------- LEFT EFIS OUTPUTS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ed7d05df-393d-47e7-a913-a80ccb459824">
+      <active>true</active>
+      <description>MINS POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MinsPOSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da645cb2-741b-4235-950d-d7436dcbe18b">
+      <active>true</active>
+      <description>BARO POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BaroPOSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a16f3638-5ebd-4478-b986-2f4ca916b872">
+      <active>true</active>
+      <description>MODE POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ModePOSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3d68169a-c49c-43ae-92f0-844d4c1cda4a">
+      <active>true</active>
+      <description>RANGE POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="RangePOSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0d58bac0-adab-4d4e-a147-d0bd052af0b7">
+      <active>true</active>
+      <description>VOR1 POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Vor1POSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="add1b91d-8a9b-45b9-9644-17a2778a7b92">
+      <active>true</active>
+      <description>VOR2 POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Vor2POSLeft" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3b1ed801-4527-465d-a776-9d59b823c770">
+      <active>true</active>
+      <description>LAST BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="LastButtonLeft" varExpression="$" />
+        <test type="Float" value="255" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="84988be4-6e55-463a-aad3-475fa6ab78c8">
+      <active>false</active>
+      <description>---------------------------------- RIGHT EFIS OUTPUTS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="EFISLEDBRIGHT1" varExpression="$" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="255" />
+        </modifiers>
+        <display type="Output" serial="EFIS1/ SN-F1B-30A" trigger="normal" pin="LED OUTPUT2 12" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ccc637c-3817-4626-b06c-2c62627b13f5">
+      <active>true</active>
+      <description>MINS POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MinsPOSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e6a73064-ab9a-4fc4-b669-911ba3e4dc8e">
+      <active>true</active>
+      <description>BARO POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BaroPOSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="45b3bc37-3247-4920-880e-ca3305116191">
+      <active>true</active>
+      <description>MODE POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ModePOSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="72c39a1b-bc10-47d4-84c1-752d3bc50564">
+      <active>true</active>
+      <description>RANGE POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="RangePOSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="72120b70-1c31-4a9a-bc5c-3af4efb6bc19">
+      <active>true</active>
+      <description>VOR1 POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Vor1POSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6e9ff0e-7652-4e2c-88ad-9a86e5a53358">
+      <active>true</active>
+      <description>VOR2 POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Vor2POSRight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="adea03a3-3d01-48c8-880e-a449aca98c18">
+      <active>true</active>
+      <description>LAST BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="LastButtonRight" varExpression="$" />
+        <test type="Float" value="255" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b35903c-accb-4ab8-b986-73d30b25f10a">
+      <active>false</active>
+      <description>---------------- DCP 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/lamps/integ/1A3FH_dcp1" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="True" expression="Round($*255,0)" />
+        </modifiers>
+        <display type="Output" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" trigger="normal" pin="LED_BRIGHTNESS" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e97e13ab-d29c-4b05-9600-7efbc2250752">
+      <active>true</active>
+      <description>DCP LED POWER</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="CL650/lamps/integ/1A3FH_dcp1" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <transformation active="False" expression="Round($*255,0)" />
+          <transformation active="True" expression="255" />
+        </modifiers>
+        <display type="Output" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" trigger="normal" pin="LED_BRIGHTNESS" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b7ad788c-1b01-4efe-b542-c3c2e02af304">
+      <active>true</active>
+      <description>DCP1 SIDE_SELECTOR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="DCP1_SIDE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8e65b83a-5dbc-4c8e-b51f-6651e35c644d">
+      <active>true</active>
+      <description>ENCODER CAPT_COURSE - LEFT MENU KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="262f5f12-707a-4d01-88ce-2fe51b718555" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6cde793a-ee95-4305-a416-799d9dc967a1">
+      <active>true</active>
+      <description>ENCODER FO_COURSE - LEFT RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_up" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_down" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="config" active="false" ref="262f5f12-707a-4d01-88ce-2fe51b718555" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ec99dad-9229-4757-b697-613e6524d888">
+      <active>true</active>
+      <description>ENCODER FO_COURSE - RIGHT RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_FO_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/range_up" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/range_down" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+          <precondition type="config" active="false" ref="262f5f12-707a-4d01-88ce-2fe51b718555" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="36fe7267-1b58-4a8b-906b-f45a2e8447ef">
+      <active>true</active>
+      <description>BUTTON_N1 - LEFT MENU SELECT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_push" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35386ec7-f71e-4e48-9075-9e27a36e9ec4">
+      <active>true</active>
+      <description>ENCODER CAPT_COURSE - RIGHT MENU KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="262f5f12-707a-4d01-88ce-2fe51b718555" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f314411-4cbc-4fad-8ac6-60b966e61aa2">
+      <active>true</active>
+      <description>BUTTON_N1 - RIGHT MENU SELECT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_push" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9f5270ab-a28d-4311-950f-85117907103d">
+      <active>true</active>
+      <description>ENCODER CAPT_COURSE - LEFT MENU KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b8e0b1e-cc9c-443a-abed-1beebb89aea8">
+      <active>true</active>
+      <description>ENCODER CAPT_COURSE - RIGHT MENU KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8bd5ac51-1ecc-45ab-a6e3-e165e54819ce">
+      <active>true</active>
+      <description>BUTTON_SPEED - LEFT REF BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/refs" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f3d35c8-2d68-4af5-84cd-0e3cd7eab07a">
+      <active>true</active>
+      <description>BUTTON_SPEED - RIGHT REF BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_SPEED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/refs" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f67f48f-fb7f-4454-9824-19d77258a8e1">
+      <active>true</active>
+      <description>BUTTON_LVL_CHANGE - LEFT BRG SRC BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/brg_src" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="598774d8-4220-41ce-9790-325c30e90ad7">
+      <active>true</active>
+      <description>BUTTON_LVL_CHANGE - RIGHT BRG SRC BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LVLCHANGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/brg_src" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1dc7d28-889b-4f26-826f-68e5a39b0b21">
+      <active>true</active>
+      <description>ENCODER HEADING</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_HDG" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7aa3cc8-2264-452e-8d25-4a2279032537">
+      <active>true</active>
+      <description>ENCODER IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_IAS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_down" expression="#-1" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/airspeed_up" expression="#+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9d3f1ce5-b0b6-44e7-8ca2-4c0c00451b12" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f4e538f8-4988-4288-a120-3ab095246f0b">
+      <active>true</active>
+      <description>ENCODER ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_ALT" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_down" expression="#-1" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_up" expression="#+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="379e4667-3988-4ac3-a9ee-79cba188e031">
+      <active>true</active>
+      <description>ENCODER VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_VS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_up" expression="#-1" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/vertical_speed_down" expression="#+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="01355cde-4b53-45f2-8165-558deb801872">
+      <active>true</active>
+      <description>TOGGLE_CAPTFD - menu knob switcher</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_CAPTFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="CAPTFDPOS" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="CAPTFDPOS" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bfbbe729-4693-49b5-851d-bde8c55ebeec">
+      <active>true</active>
+      <description>TOGGLE_ATARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_ATARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/ats_hold" expression="0" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/ats_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f83ab816-fb69-465f-ab84-96ba23a4f3f1">
+      <active>true</active>
+      <description>COBUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_CO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/ias_mach" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9c46121-13c0-49ee-8579-eab3205f4bee">
+      <active>true</active>
+      <description>SPEED INT BUTTON - toggle menu knob side</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MENU_KNOB_SIDE" varExpression="1" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="7cc21bb3-d6be-495e-bf72-485043277705" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3606ccf3-0285-4bc5-ab04-2f9119b0cba6">
+      <active>true</active>
+      <description>SPEED INT BUTTON - toggle menu knob side Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_SPEEDINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MENU_KNOB_SIDE" varExpression="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="7cc21bb3-d6be-495e-bf72-485043277705" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="96eeab41-62d8-4ac4-8146-a5258a0a226a">
+      <active>true</active>
+      <description>ALT INT BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_ALTINT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/flc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/flc_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7ab5e52-8d1f-42c2-bb58-59a08ada1a3d">
+      <active>true</active>
+      <description>BUTTON_CMDA - GND SPOILER ARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="CL650/pedestal/gnd_spoilers" expression="2" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="0406c5c2-5616-40da-a6f9-aef25de8a244" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c50bfbb-e56d-4366-bef0-e4f746daa37c">
+      <active>true</active>
+      <description>BUTTON_CMDA - GND SPOILER DISARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="CL650/pedestal/gnd_spoilers" expression="0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="0406c5c2-5616-40da-a6f9-aef25de8a244" operand="&gt;" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="96ffc2b3-2ac0-4167-8f63-3dffa5f2fc57">
+      <active>true</active>
+      <description>BUTTON_CMDB - REVERSE ARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/pedestal/thr_rev/arm_R" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3c239c9-3835-4b98-9643-2e10f386fa40">
+      <active>true</active>
+      <description>BUTTON_CMDB - REVERSE ARM Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CMDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/pedestal/thr_rev/arm_L" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc2f46e7-0db0-4357-805e-b5a4124e40c9">
+      <active>true</active>
+      <description>BUTTON_VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/vnav_mode" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3db2dbef-9a9c-4c0b-939b-49d8552795eb">
+      <active>true</active>
+      <description>BUTTON_HDGSEL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_HDGSEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/hdg_mode" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="83b6639c-fe7a-45c0-8be6-4b86c0d4955b">
+      <active>true</active>
+      <description>BUTTON_LNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_LNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/nav_mode" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c606a78b-6773-48a8-bc82-ce1a65764366">
+      <active>true</active>
+      <description>FO-FD_AP_ENG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/ap_eng_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/ap_eng_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="176651a0-48a7-4732-9644-07dbc0910602">
+      <active>true</active>
+      <description>BUTTON_VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/vs_mode" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="70d414e5-5eee-4b03-8038-c25aa75c6752">
+      <active>true</active>
+      <description>BUTTON_APP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_APP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/appr_mode" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44366d65-a270-44a4-a789-4da79631a143">
+      <active>true</active>
+      <description>BANK ANGLE 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BANKANGLEPOS" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="297d7161-5435-4356-8684-80446e591225">
+      <active>true</active>
+      <description>BANK ANGLE 1 Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BANKANGLEPOS" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6d0f4cac-b5f8-4297-87ab-7fc6c393d903">
+      <active>true</active>
+      <description>BANK ANGLE 1 Copy Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BANKANGLEPOS" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8b9d36d0-c59e-4c08-8739-5dd16a3eebbc">
+      <active>true</active>
+      <description>BANK ANGLE 1 Copy Copy Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BANK 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BANKANGLEPOS" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9d59f6a3-a6f4-477b-afdd-ede2bf071a95">
+      <active>true</active>
+      <description>AP DISCON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BTN_APDISCON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/FCP/ap_disc" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="237cfe14-3b84-46df-b3cd-d3d13cfa4f0b">
+      <active>true</active>
+      <description>BUTTON_VOR_LOC - TOGGLE RADIO KNOB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_VORLOC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="VOR_LOC_BTN_STATUS" varExpression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e249b96d-10c7-4f7c-9c5b-191a4e92bff3">
+      <active>true</active>
+      <description>LEFT RADIO KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c9143f3d-a910-4856-ae0b-6ef7bff52e27">
+      <active>true</active>
+      <description>RIGHT RADIO KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f0cb55e-40d0-4c5b-9902-2b9b5f41b065">
+      <active>true</active>
+      <description>LEFT RADIO KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eaf9d847-dabe-401a-a631-771b3326f257">
+      <active>true</active>
+      <description>RIGHT RADIO KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="ENC_CAPT_CRS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="true" ref="CAPTFDPOS" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67d31647-d673-4b03-ac47-74aa87fe6675">
+      <active>true</active>
+      <description>BUTTON_N1 - RADIO SELECT LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_push" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63d247ef-4779-4815-8b82-04576248f010">
+      <active>true</active>
+      <description>BUTTON_N1 - RADIO SELECT RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_N1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/CCP/2/radio_push" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="variable" active="true" ref="VOR_LOC_BTN_STATUS" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6fd229b5-9fb4-426b-bdce-65ef946eeb99">
+      <active>true</active>
+      <description>BUTTON_CWSA_MENU_LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="187f3061-6b95-46f0-af3c-224f04b746ee">
+      <active>true</active>
+      <description>BUTTON_CWSA_MENU_RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="805aebd0-4ffb-4b83-bbfc-61a6198f13bf">
+      <active>true</active>
+      <description>BUTTON_CWSB_NAV_SRC_LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/nav_src" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="953b91cf-bcec-4ae9-80c9-58e6e5dd2564" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4dd55e1b-edca-4121-a290-b434bc17f5cf">
+      <active>true</active>
+      <description>BUTTON_CWSB_NAV_SRC_RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="BUTTON_CWSB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/nav_src" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="8e555e7d-3e4f-4a35-b8ba-217c58a58440" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35a2df7c-f016-4c5e-9c2a-10b2dfa08dcc">
+      <active>true</active>
+      <description>FO-FD </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="MCP/ SN-378-E91" name="TOGGLE_FOFD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FOFDPOS" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="FOFDPOS" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1fca8254-2096-4fdc-9307-73a842f05c7c">
+      <active>false</active>
+      <description>---------------------------------------------------- LEFT EFIS INPUTS</description>
+    </config>
+    <config guid="6a7474f4-e483-4e10-ae96-e85d0f6fb6d9">
+      <active>false</active>
+      <description>---------------------------------------------------- MODES</description>
+    </config>
+    <config guid="c93ec6aa-e4b2-434e-a688-7df0b9ce3d8a">
+      <active>true</active>
+      <description>MINS - RADIO </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-RADIO - 46" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e678d330-5e5d-48c1-8228-6249d6a98918">
+      <active>true</active>
+      <description>MINS - BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS-BARO - 47" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSLeft" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1cbe6477-91ce-46b7-bb49-91a4a4d65ab5">
+      <active>true</active>
+      <description>BARO - IN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - IN A2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="15c24436-61b5-4cc8-8f80-aa96e314766c">
+      <active>true</active>
+      <description>BARO - HPA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO - HPA A3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSLeft" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="31335fd1-0a36-46f6-a8d7-29ea42c40f5e">
+      <active>true</active>
+      <description>MODE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="APP -50" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e5d6cbb7-6bc1-447c-81fd-ea6d9262436b">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR - 51" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSLeft" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="457f9d7d-ffe9-466b-ba7b-dda0a99869fd">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MAP - 52" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSLeft" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6aa7356-0942-4150-9791-caa4e6d193e0">
+      <active>true</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="PLAN - 53" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSLeft" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e8bcb1c9-d3b9-4c38-8115-851852ba4a42">
+      <active>true</active>
+      <description>RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 5 -A4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="34cc1e77-c616-4b25-80be-d3747f270bbe">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 10 - A5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bcf6f513-4394-4867-ae6f-2d2d36a9a110">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 20 - A6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="146fbe0c-1ab0-4eb6-9562-453716427104">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 40 - A7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3506cf83-15ec-4ceb-81b0-11438eadf2ef">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 80 - A8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58a38a8d-f6c6-4e7c-b020-c1cf41625216">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 160 - A9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="064b065a-56ad-4542-9f61-cadffbd51f83">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 320 - A10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c4ac59c-1b1e-4744-bc5e-6701a943dd56">
+      <active>true</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="RANGE 640 - A11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSLeft" varExpression="7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5428acf6-9095-494e-866d-ed160063dece">
+      <active>true</active>
+      <description>VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR1 - 23" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSLeft" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eeb620d5-c0df-4af0-9278-c39728275808">
+      <active>true</active>
+      <description>VOR (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF1 - 22" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSLeft" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a85c625a-f785-472c-b333-cd7523b78c8c">
+      <active>true</active>
+      <description>VOR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="VOR2 -24" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSLeft" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e0483ff1-074b-45b9-b400-88afb48a7146">
+      <active>true</active>
+      <description>VOR2 (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="ADF2 -25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSLeft" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSLeft" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d377f35e-ed92-4d0b-bcf4-90964f50b585">
+      <active>false</active>
+      <description>---------------------------------- KNOBS</description>
+    </config>
+    <config guid="b5b649db-8860-4910-a172-3fd1887ad018">
+      <active>true</active>
+      <description>DCP MENU INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1d89896a-08ba-4dfa-80cd-b0a506506edf">
+      <active>true</active>
+      <description>DCP MENU OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e9c8b9c-7ad4-4a73-9c06-e25a844b341f">
+      <active>true</active>
+      <description>DCP RANGE INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f28d8ca5-8898-4a57-b921-63b76db09188">
+      <active>true</active>
+      <description>DCP RANGE OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fe9189f8-303d-4937-b971-f91d7024494d">
+      <active>true</active>
+      <description>CCP MENU INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="61516d13-d7eb-4905-9eae-259aeeee8655">
+      <active>true</active>
+      <description>CCP MENU OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="478209f2-7f26-4e03-b3b6-925abbfcb415">
+      <active>true</active>
+      <description>RADIO KNOB INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="MINS ENCA0-A1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5edfb071-8f5f-4c34-88f1-7359a69b78ad">
+      <active>true</active>
+      <description>RADIO KNOB OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="BARO ENC  A14A15" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/CCP/1/radio_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a16f3638-5ebd-4478-b986-2f4ca916b872" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0af71508-85b0-4d78-b146-b91a55f74c9d">
+      <active>false</active>
+      <description>---------------------------------- BUTTONS</description>
+    </config>
+    <config guid="d7a6fa72-ae29-4d11-a467-273ddfa0f302">
+      <active>true</active>
+      <description>WXR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="WXR 36" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/atcb_hold" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/atcb_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef092734-53b7-4335-8bd5-f518d30a9ab0">
+      <active>true</active>
+      <description>STA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="STA 35" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="CL650/phone/toggle_sat" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="37c9a278-5382-43d8-aca1-58c49d71fca0">
+      <active>true</active>
+      <description>WPT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="WPT 34" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="LastButtonLeft" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7abfbed7-6f99-4b4c-82c3-204d8bb588b7">
+      <active>true</active>
+      <description>ARPT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="APPT 33" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="LastButtonLeft" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="26388cf7-e806-47a4-8a4a-243c2d98bf3e">
+      <active>true</active>
+      <description>DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="DATA 32" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="LastButtonLeft" varExpression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="95b44057-12b5-4b93-b699-2f4e8647b9e9">
+      <active>true</active>
+      <description>POS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="POS 31" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="LastButtonLeft" varExpression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43f0d9bd-166b-4315-b054-252eca208320">
+      <active>true</active>
+      <description>TERR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS1/ SN-F1B-30A" name="TERR 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="LastButtonLeft" varExpression="6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>---------------------------------------------------- RIGHT EFIS INPUTS</description>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>---------------------------------------------------- MODES</description>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MINS - RADIO </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="MINS-RADIO - A13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MINS - BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="MINS-BARO - A12" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MinsPOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>BARO - IN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="BARO - IN 48" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>BARO - HPA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="BARO - HPA 49" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BaroPOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MODE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="APP - A8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="VOR - A9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="MAP - A10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>MODE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="PLAN - A11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ModePOSRight" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 5 - 50" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 10 - 51" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 20 - 52" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 40 - 53" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 80 - A0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 160 - A1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 320 - A2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>RANGE (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="RANGE 640 - A3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="RangePOSRight" varExpression="7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="VOR1 - 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>VOR (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="ADF1 - 21" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor1POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>VOR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="VOR2 -23" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55208272-2e1e-4a2b-bce1-55653a4ccac3">
+      <active>false</active>
+      <description>VOR2 (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="ADF2 -22" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="2" />
+          <onRelease type="VariableInputAction" varType="number" varName="Vor2POSRight" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c31107ce-9ebd-4006-86a9-c9bf02ab9278">
+      <active>false</active>
+      <description>------ -test throttle right efis </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="MINS ENCA6-A7" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/engines/throttle_down_1" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/engines/throttle_up_1" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1e6fa525-4ffe-4d8e-ad28-6b995d99dda7">
+      <active>false</active>
+      <description>------ -test throttle right efis  (Copy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="EFIS2/ SN-229-615" name="BARO ENCA4-A5" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/engines/throttle_down_2" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/engines/throttle_up_2" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a34e54d8-48a5-4c2e-a345-e78cda34dcaa">
+      <active>true</active>
+      <description>DCP1 - MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="68756d05-529c-42d0-a717-1ec0670a66a0">
+      <active>true</active>
+      <description>DCP1 - ESC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/esc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/esc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1e79028-eead-493b-addc-404f9ffd1171">
+      <active>true</active>
+      <description>DCP1 - NAV SRC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/navsrc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/navsrc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd4e1303-b8e1-41a5-90f3-f6243d36c182">
+      <active>true</active>
+      <description>DCP1 - FRMT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/frmt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/frmt_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2ec7d2f4-403e-417b-ba04-10f405480377">
+      <active>true</active>
+      <description>DCP1 - TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/tfc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/tfc_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="396ed1c2-788e-4d3c-b3ff-bbf67ce102f1">
+      <active>true</active>
+      <description>DCP1 - TRWX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/trwx_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/trwx_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2ee24ff-9dde-445b-b6d3-9fa4639cc298">
+      <active>true</active>
+      <description>DCP1 - BRGSRC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/brgsrc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/brgsrc_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="406e5344-be38-465c-bda9-412aaa7b7c63">
+      <active>true</active>
+      <description>DCP1 - REFS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/refs_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/refs_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1973c696-c8f6-4b99-8e76-aba9bf249f87">
+      <active>true</active>
+      <description>DCP1 - RDRMENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/rdrmenu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/rdrmenu_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c50c13e2-b38b-4e4a-9239-ae0c5b58025e">
+      <active>true</active>
+      <description>DCP1 - RADAR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/radar_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/1/radar_release" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5e0f6e1b-62a5-48a1-b6ad-00ede076d461">
+      <active>true</active>
+      <description>DCP1 -  LEFT INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encode2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="52db95f1-adc1-46c0-a66b-a600ffcd7c8c">
+      <active>true</active>
+      <description>DCP1 -  LEFT OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="11a29a23-862b-433f-9e7d-3746ae97d2f0">
+      <active>true</active>
+      <description>DCP1 - RIGHT INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/range_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bb7992d6-dc8d-44ad-87af-17674d73c2c0">
+      <active>true</active>
+      <description>DCP1 - RIGHT OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/1/tilt_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="37b0a8db-8083-4d2f-b088-0a43ebe9dfb7">
+      <active>true</active>
+      <description>DCP1 - SIDE SELECTOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="SideSelectorBtn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="DCP1_SIDE" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="DCP1_SIDE" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

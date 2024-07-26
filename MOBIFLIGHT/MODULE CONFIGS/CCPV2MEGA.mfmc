@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>CCPV2MEGA</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="54" />
+  <Button Name="Button 1" Pin="55" />
+  <Button Name="Button 2" Pin="56" />
+  <Button Name="Button 3" Pin="57" />
+  <Button Name="Button 4" Pin="58" />
+  <Button Name="Button 5" Pin="59" />
+  <Button Name="Button 6" Pin="60" />
+  <Button Name="Button 7" Pin="61" />
+  <Button Name="Button 8" Pin="62" />
+  <Button Name="Button 9" Pin="63" />
+  <Button Name="Button 10" Pin="64" />
+  <Button Name="Button 11" Pin="65" />
+  <Button Name="Button 13" Pin="66" />
+  <Button Name="Button 14" Pin="67" />
+  <Button Name="Button 15" Pin="68" />
+  <Button Name="Button 16" Pin="69" />
+</Config>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+
+
+
+<inputs>
+
+
+    <config guid="24361cb0-9f5f-494d-99ef-ef513d3a3102">
+      <active>true</active>
+      <description>DCP1RIGHT - MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/menu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/menu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c14571b3-11ee-40b9-b7a6-7b719e3cf187">
+      <active>true</active>
+      <description>DCP1RIGHT - ESC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/esc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/esc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2d26ffe8-7e11-4a95-bbf7-68c0bff2bf0a">
+      <active>true</active>
+      <description>DCP1RIGHT - NAV SRC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/navsrc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/navsrc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="509dfd27-d230-4091-9808-d3ba8212ac6a">
+      <active>true</active>
+      <description>DCP1RIGHT - FRMT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/frmt_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/frmt_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8505c499-d004-450e-8ce7-385133086346">
+      <active>true</active>
+      <description>DCP1RIGHT - TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/tfc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/tfc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8a1af52-7d28-4a76-a72a-3437284531d5">
+      <active>true</active>
+      <description>DCP1RIGHT - TRWX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/trwx_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/trwx_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a03cdc96-31d8-43a8-b798-b16598d00181">
+      <active>true</active>
+      <description>DCP1RIGHT - BRGSRC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/brgsrc_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/brgsrc_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8b4f8a88-0dc8-4b75-b859-6421c51963b6">
+      <active>true</active>
+      <description>DCP1RIGHT - REFS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/refs_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/refs_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f30c6b7-da66-4d7a-8a1f-7e6812da831b">
+      <active>true</active>
+      <description>DCP1RIGHT - RDRMENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/rdrmenu_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/rdrmenu_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f95786cc-9b2a-4f7d-bac1-1f0c06cb8af2">
+      <active>true</active>
+      <description>DCP1RIGHT - RADAR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1BUTTONSWHITE/ SN-18G-E6A" name="Button 9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/radar_hold" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="custom/rfg/dcp/2/radar_release" expression="" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08e25dce-7550-401b-9b19-3858ec9aba35">
+      <active>true</active>
+      <description>DCP1RIGHT -  LEFT INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encode2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_data_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_data_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1429bb0-5e40-44b3-9a93-34ee3e5e9642">
+      <active>true</active>
+      <description>DCP1RIGHT -  LEFT OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_adv_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/menu_adv_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f85a137-7aab-432f-be38-7e67ec85debe">
+      <active>true</active>
+      <description>DCP1RIGHT - RIGHT INNER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/range_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/range_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="46ab1c0d-0c6b-44f7-9d36-d794412125c3">
+      <active>true</active>
+      <description>DCP1RIGHT - RIGHT OUTER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.0, Culture=neutral, PublicKeyToken=null" serial="DCP1KNOBSLEDBLUE/ SN-G2C-535" name="Encoder3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/tilt_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="CL650/DCP/2/tilt_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="b7ad788c-1b01-4efe-b542-c3c2e02af304" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+
+
+
+</inputs>   
+    </MobiflightConnector>
